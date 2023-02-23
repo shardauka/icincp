@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+{% load i18n %}
+
+
+{% trans 'Welcome' %}<br>
+
+Language code: {{ lang.code }}<br>
+Name of language: {{ lang.name_local }}<br>
+Name in English: {{ lang.name }}<br>
+Bi-directional: {{ lang.bidi }}<br>
+Name in the active language: {{ lang.name_translated }}
+
+{% endblock content %}
