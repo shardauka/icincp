@@ -1,4 +1,7 @@
 from django.shortcuts import render
 
+from pages.models import News
+
 def home_view(request, *args, **kwargs):
-    return render(request, "pages/home.html")
+    context={'news': News.objects.get(id=1)}
+    return render(request, "pages/home.html", context)
