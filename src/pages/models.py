@@ -1,5 +1,5 @@
 from django.db import models
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import gettext as _
 
 import datetime
 
@@ -11,6 +11,6 @@ class News(models.Model):
     date_published = models.DateTimeField(default=datetime.datetime.now, help_text=_('Published date'))
     
     class Meta():
-        verbose_name = ('News')
-        verbose_name_plural = ('News')
+        verbose_name = _('News')
+        verbose_name_plural = _('News')
 
