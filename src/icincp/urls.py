@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from pages.views import home_view
+from pages.views import home_view, partner_search
 from django.conf.urls.i18n import i18n_patterns
 
 
@@ -29,4 +29,5 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
     path('', home_view, name='home'),
+    path('partnersearch', partner_search, name='partnersearch'),
 )

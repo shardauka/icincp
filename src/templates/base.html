@@ -1,9 +1,10 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ICI NCP
     {% block title %}
     {% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}
@@ -14,18 +15,241 @@
         {% endwith %}
     {% endblock %}
     </title>
+    <link rel="icon" href="https://ici.ro/static/images/logo-ICI-x64.037d57ac2050.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
     <!-- <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/' %}"> -->
     {% block extra_css %}
         {# Override this in templates to add extra stylesheets #}
     {% endblock %}
 </head>
-<body>
+<body class="placeholder" data-scrollbar="#204163">
+    <!--header area start here-->
+    <header id="sticy_nav" class="header-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-menu header-shadow header-round d-flex justify-content-between align-items-center">
+                    <div id="rect" class="logo" style="margin-left: 2.5em; display: flex; flex-direction: row; align-items: center;">
+                        <!-- <a href="homepage.html"><img src="images/logo.png" alt="logo here"></a> -->
+                        <img style="width: 60px; height: 60px;" src="https://static.wixstatic.com/media/ca095f_9d1fdb00e48a4eefb98663f8f26db992~mv2.jpg/v1/fill/w_109,h_110,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/HE%20logo_jfif.jpg" alt="banner image" srcset="https://static.wixstatic.com/media/ca095f_9d1fdb00e48a4eefb98663f8f26db992~mv2.jpg/v1/fill/w_109,h_110,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/HE%20logo_jfif.jpg 1x, https://static.wixstatic.com/media/ca095f_9d1fdb00e48a4eefb98663f8f26db992~mv2.jpg/v1/fill/w_218,h_220,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/HE%20logo_jfif.jpg 2x" fetchpriority="high">
+                        <h3 style="margin-left: 10px;">NCP@ICI</h3>
+                    </div>
+                    <div class="pupko-menu">
+                        <nav class="main-navbar">
+                            <ul>
+                                <li>
+                                    <a href="/index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="/assistance-for-heu-proposal.html">HEu Proposal</a>
+                                    <ul class="dropdawn">
+                                        <li><a href="/admissibility.html">Admissibility</a></li>
+                                        <li><a href="/types-of-participants.html">Types of Participants</a></li>
+                                        <li><a href="#">Eligibility</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/partnersearch">Partner Search</a>
+                                </li>
+                                <li>
+                                    <a href="#">Resources</a>
+                                    <ul class="dropdawn">
+                                        <li><a href="#">General Resources</a></li>
+                                        <li><a href="#">ERC</a></li>
+                                        <li><a href="#">MSCA</a></li>
+                                        <li><a href="#">CL4</a></li>
+                                        <li><a href="#">Widening&Era</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">News</a>
+                                </li>
+                                <li>
+                                    <a href="./contactTwo.html">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#">Language</a>
+                                    <ul class="dropdawn">
+                                        <li><a href="#">Romanian</a></li>
+                                        <li><a href="#">English</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- responsive bar -->
+                    <div class="animate-bar">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header area end here-->
+
     {% block content %}
     
     {% endblock content %}
-<script>
-</script>
+
+    <!--footer area call here-->
+     <!--footer area start here-->
+     <footer class="footer-area pt-100 pt-md-60 footer-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-heading d-flex justify-content-between align-items-center pb-50">
+                        <div class="section-title animate get-left">
+                            <h2 class="text-white">Get our help</h2>
+                        </div>
+                        <div class="animate get-right">
+                            <button class="btn btn-sm btn-radious bg-white  btn-shatter-orange btn-animate">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-conent-area bdr-y-white py-50 width-100p px-15">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="company-menu comon-footer mb-md-50">
+                                <div class="card-title pb-50 pb-md-25 animate get-bottom">
+                                    <h3 class="text-white">Links</h3>
+                                </div>
+                                <ul class="animate get-bottom">
+                                    <li class="animate"><a href="#">Home</a></li>
+                                    <li class="animate"><a href="#">HEu Proposal</a></li>
+                                    <li class="animate"><a href="#">Partner Search</a></li>
+                                    <li class="animate"><a href="#">Resources</a></li>
+                                    <li class="animate"><a href="#">News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="company-menu comon-footer mb-xs-50">
+                                <div class="card-title pb-50 pb-md-25 animate get-bottom">
+                                    <h3 class="text-white text-capital">Info</h3>
+                                </div>
+                                <ul class="animate get-bottom">
+                                    <li class="animate"><a href="#">Other HEu Clusters</a></li>
+                                    <li class="animate"><a href="#">Ministry of Research, Innovation and Digitalization</a></li>
+                                    <li class="animate"><a href="#">European Union</a></li>
+                                    <li class="animate"><a href="#">CL4</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="company-menu comon-footer mb-md-50">
+                                <div class="card-title pb-50 pb-md-25 animate get-bottom">
+                                    <h3 class="text-white text-capital">Data Policy</h3>
+                                </div>
+                                <ul class="animate get-bottom">
+                                    <li class="animate"><a href="#">GDPR Policy</a></li>
+                                    <li class="animate"><a href="#">Processing personal data</a></li>
+                                    <li class="animate"><a href="#">Cookie Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="company-menu">
+                                <div class="card-title pb-50 pb-md-25 animate get-bottom">
+                                    <h3 class="text-white text-capital">get in touch</h3>
+                                </div>
+                                <ul class="animate get-bottom">
+                                    <li class="pb-20 text-regular text-gray animate"><b>Address:</b> 8-10, Maresal Averescu Avenue, sector 1, 011455, Bucharest, Romania
+                                        <br> <b>Phone:</b> <a class="text-regular text-white text-sbold" href="#">+40 21 316 52 62</a>
+                                        <br> <b>E-Mail:</b><a class="text-regular text-white text-sbold" href="#"> office@ici.ro</a>
+                                    </li>
+                                    <li>
+                                        <ul class="d-flex flex-wrap align-items-center animate get-right">
+                                            <li class="animate"><a class="text-20 text-white social-round mr-15 bg-icon icon-animation" href="https://www.facebook.com/ICIBucuresti/"><i class="icofont-facebook"></i></a></li>
+                                            <li class="animate"><a class="text-20 text-white social-round mr-15 bg-icon icon-animation" href="https://twitter.com/ICIBucharest"><i class="icofont-twitter"></i></a></li>
+                                            <li class="animate"><a class="text-20 text-white social-round mr-15 bg-icon icon-animation" href="https://www.instagram.com/ici.bucuresti/"><i class="icofont-instagram"></i></a></li>
+                                            <li class="animate"><a class="text-20 text-white social-round bg-icon icon-animation" href="https://www.linkedin.com/company/ici-bucharest"><i class="icofont-linkedin"></i></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copy-right text-center py-50 animate get-top">
+                        <p class="text-gray">© 2021-2023 NCP@ICI. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer area end here-->
+
+      <!--all script js call here-->
+    
+    <!-- DEFAULT JQUERY SCRIPT HERE
+        ================================================== -->
+        <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'js/popper.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+        <script src="{% static 'js/jquery-migrate-1.4.1.min.js' %}"></script>
+    
+        <!-- ALL ANIMATION SCRIPT CALL HERE 
+        ====================================-->
+        <!-- animation plugin script -->
+        <script src="{% static 'js/gsap.min.js' %}"></script>
+        <script src="{% static 'js/scroll-tigger.js' %}"></script>
+        <script src="{% static 'js/scroll-magic.js' %}"></script>
+        <script src="{% static 'js/nicescroll.min.js' %}"></script>
+        <script src="{% static 'js/aos.js' %}"></script>
+    
+         <!-- ALL PLUGIN SCRIPT CALL HERE 
+        ====================================-->
+        <!--skick script-->
+        <script src="{% static 'js/slick.min.js' %}"></script>
+    
+        <!--Owl script-->
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'js/owl-custom.js' %}"></script>
+    
+        <!--Waypoint script-->
+        <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    
+        <!--Counterup script-->
+        <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    
+        <!--Youtube overlay script-->
+        <script src="{% static 'js/youtube-overlay.js' %}"></script> 
+    
+        <!--swiper script-->
+         <script src="{% static 'js/swiper.min.js' %}"></script>
+         
+        <!--Parallax script-->
+        <script src="{% static 'js/simpleParallax.min.js' %}"></script>
+    
+        <!-- Nice Select -->
+        <script src="{% static 'js/nice-select.min.js' %}"></script>
+        <!-- Elevatezoom  script-->
+        <script src="{% static 'js/jquery.elevatezoom.js' %}"></script>
+    
+    
+        <!--isotope script-->
+        <script src="{% static 'js/isotop-pakage-min.js' %}"></script>
+        <script src="{% static 'js/image-loaded.min.js' %}"></script>
+    
+        <!-- CUSTOM SCRIPT CALL HERE 
+        ====================================-->
+        <script src="{% static 'js/tl-custom.js' %}"></script>
+        <script src="{% static 'js/mouse-event.js' %}"></script>
+        <script src="{% static 'js/scrollTrigger.js' %}"></script>
+        <script src="{% static 'js/scripts.js' %}"></script>
+    
+    
+        <!--Youtube overlay script-->
+        <script src="{% static 'js/youtube-overlay.js' %}"></script>
+
     {% block extra_js %}
         {# Override this in templates to add extra javascript #}
     {% endblock %}
