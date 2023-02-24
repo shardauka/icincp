@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+<!--cm-banner area start here-->
+<section class="cm-banner-area relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="cm-banner-content d-flex justify-content-between align-items-center">
+                    <h2 class="text-capital get-left animate">Contact</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb get-right animate">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--cm-banner area end here-->
+<section class="contact-information pt-100 pt-sm-60 pb-50 pb-md-30">
+    <div class="container">
+        <div class="section-title text-center pb-50 pb-md-30 get-bottom animate">
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-md-50">
+                <div class="contact-information-fild get-bottom animate">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="single-form">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single-form">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single-form">
+                                <input type="number" class="form-control" placeholder="Number">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single-form">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="single-form">
+                                <textarea name="value" cols="50" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-lg btn-purple btn-radious">Send massage</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--contact us style start here-->
+<section class="contact-us-wrapper pt-50 pt-md-30 pb-100 pb-md-60 relative">
+    <div class="contact-heading text-center mx-w-700 m-auto pb-50 pb-md-30 get-bottom animate">
+        <div class="section-title pb-25 animate">
+            <h2>Contact us for any help</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-8 m-0-auto get-bottom animate mb-sm-30">
+                <div class="conatct-card text-center bg-white border-shadow radious-10 ">
+                <div class="contact-card-content get-bottom animate">
+                        <h6 class="animate pb-10" style="font-weight: bold;">Phone: <br> <a href="#">+40 21 316 52 62</a></h6>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-8 m-0-auto get-bottom animate mb-sm-30">
+                <div class="conatct-card  text-center bg-white border-shadow radious-10 ">
+                <div class="contact-card-content animate get-bottom ">
+                    <h6 class="animate pb-10" style="font-weight: bold;">Email: <br> <a href="#">office@ici.ro</a></h6>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-8 m-0-auto get-bottom animate">
+                <div class="conatct-card text-center bg-white border-shadow radious-10 ">
+                <div class="contact-card-content animate get-bottom">
+                        <h6 class="animate pb-10"><b>Address:</b> <br> 8-10, Maresal Averescu Avenue, sector 1, 011455, Bucharest, Romania</h6>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="images/Contact-round.png" alt class="contact-circle">
+    <img src="images/Contact-man.png" alt class="conatct-man contact-two-man">
+</section>
+<!--contact us style end here-->
+{% endblock content %}
