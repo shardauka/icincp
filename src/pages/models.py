@@ -15,6 +15,13 @@ class News(models.Model):
         verbose_name_plural = _('News')
 
 
+class HEPoi(models.Model):
+    name = models.CharField(max_length = 64, help_text=_('Horizon Europe programm of interest'))
+    description = models.CharField(max_length = 512, help_text=_('Horizon Europe programm description'), blank=True, null=True)
+
+    def __str__(self) -> str:
+        return self.name
+
 class EOI(models.Model):
     first_name = models.CharField(max_length = 32, help_text=_('First name'))
     last_name = models.CharField(max_length = 32, help_text=_('Last name'))
@@ -25,7 +32,7 @@ class EOI(models.Model):
     organization_short_description = models.CharField(max_length = 1024, help_text=_('Organization short description'))
     research_fields = models.CharField(max_length = 256, help_text=_('Research fields'))
     key_words = models.CharField(max_length = 512, help_text=_('Key words'))
-    programm_of_interest = models.CharField(max_length = 16, help_text=_('programm of interest'))
+    hepoi = models.ManyToManyField(HEPoi, help_text=_('programm of interest'))
     department_short_description = models.CharField(max_length = 2048, help_text=_('Department short description'))
     skills_competences = models.CharField(max_length = 1024, help_text=_('Skills and competences'))
     scientific_publication = models.CharField(max_length = 2048, help_text=_('Scientific publications'))
@@ -36,3 +43,7 @@ class EOI(models.Model):
     class Meta:
         verbose_name = _('EOI')
         verbose_name_plural = _('EOIs')
+
+    def __str__(self) -> str:
+        return self.email + ' ' + self.first_name + ' ' + self.last_name
+    

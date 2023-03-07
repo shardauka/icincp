@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-23 15:07+0200\n"
+"POT-Creation-Date: 2023-03-07 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,220 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
 "2:1));\n"
+
+#: .\pages\forms.py:6 .\pages\models.py:26
+msgid "First name"
+msgstr "Nume"
+
+#: .\pages\forms.py:6
+msgid "Please enter your first name"
+msgstr "Vă rugăm introduceți numele"
+
+#: .\pages\forms.py:8 .\pages\models.py:27
+msgid "Last name"
+msgstr "Prenume"
+
+#: .\pages\forms.py:8
+msgid "Please enter your last name"
+msgstr "Vă rugăm introduceți prenumele"
+
+#: .\pages\forms.py:10 .\pages\models.py:29
+msgid "Organization pozition"
+msgstr "Poziția în organizație"
+
+#: .\pages\forms.py:10
+msgid "Position in organisation"
+msgstr "Poziția în organizație"
+
+#: .\pages\forms.py:10
+#, fuzzy
+#| msgid "Position in organisation"
+msgid "Please enter your pozition in the organization"
+msgstr "Poziția în organizație"
+
+#: .\pages\forms.py:12 .\pages\models.py:28
+msgid "Email address"
+msgstr "Adresa de email"
+
+#: .\pages\forms.py:12
+msgid "Email"
+msgstr "Email"
+
+#: .\pages\forms.py:12
+msgid "Please enter your email"
+msgstr "Vă rugăm introduceți adresa de email"
+
+#: .\pages\forms.py:14 .\pages\models.py:30
+msgid "Organization name"
+msgstr "Numele organizației"
+
+#: .\pages\forms.py:14
+#, fuzzy
+#| msgid "Organization name"
+msgid "Please enter your organization name"
+msgstr "Numele organizației"
+
+#: .\pages\forms.py:16 .\pages\models.py:31
+msgid "Organization acronym"
+msgstr "Acronimul organizației"
+
+#: .\pages\forms.py:16
+#, fuzzy
+#| msgid "Organization acronym"
+msgid "Please enter your organization acronym"
+msgstr "Acronimul organizației"
+
+#: .\pages\forms.py:18 .\pages\models.py:32
+#, fuzzy
+#| msgid "Short description"
+msgid "Organization short description"
+msgstr "Scurtă descriere a organizației"
+
+#: .\pages\forms.py:18
+msgid "Short description of the organization (max. 1000 characters)"
+msgstr "Scurtă descriere a organizației (max. 1000 caractere)"
+
+#: .\pages\forms.py:18
+msgid "Please enter a short description of your organization"
+msgstr "Vă rugăm introduceți o scurtă descriere a organizației dumneavoastră"
+
+#: .\pages\forms.py:20 .\pages\models.py:33
+msgid "Research fields"
+msgstr "Arii de cercetare"
+
+#: .\pages\forms.py:20
+msgid ""
+"Research Field(s) (Please indicate the research field(s) most relevant for "
+"Horizon Europe proposals)"
+msgstr ""
+"Arii de cercetare (Vă rugăm indicați ariile de cercetare cele mai relevante "
+"pentru propuerile Horizon Europe)"
+
+#: .\pages\forms.py:20
+#, fuzzy
+#| msgid "Research fields"
+msgid "Please enter research fields"
+msgstr "Arii de cercetare"
+
+#: .\pages\forms.py:22 .\pages\models.py:34
+msgid "Key words"
+msgstr "Cuvinte cheie"
+
+#: .\pages\forms.py:22
+msgid ""
+"Key words (Please mention up to 10 key words best describing your expertis "
+"and research field(s))"
+msgstr ""
+"Cuvinte cheie (Vă rugăm menționați până la 10 cuvinte cheie ce descriu cel "
+"mai bine expertiza și domeniile ce cercetare)"
+
+#: .\pages\forms.py:22
+msgid "Please enter keywords"
+msgstr "Vă rugăm introduceți cuvinte cheie"
+
+#: .\pages\forms.py:31
+msgid "Please select at least one programm of interest"
+msgstr "Vă rugăm să alegeți cel puțin un program de interes"
+
+#: .\pages\forms.py:34 .\pages\forms.py:42 .\pages\models.py:36
+#: .\pages\models.py:40
+#, fuzzy
+#| msgid "Short description"
+msgid "Department short description"
+msgstr "Scurtă descriere"
+
+#: .\pages\forms.py:34
+msgid ""
+"Short description of the department: Please provide a description of a "
+"department / school, that intends to participate in the Horizon Europe "
+"proposal. Please mention here: relevant expertise, relevant infrastructure, "
+"relevant existing networks / partnerships / collaborations (everything that "
+"shows the strengths of your department as a partner in a Horizon Europe  "
+"proposal) (max. 2000 characters)."
+msgstr ""
+
+#: .\pages\forms.py:34
+msgid "Please enter a short description of your department"
+msgstr "Vă rugăm introduceți o scurtă descriere a departamentului dumneavoastră"
+
+#: .\pages\forms.py:36 .\pages\models.py:37
+msgid "Skills and competences"
+msgstr "Abilități și competențe"
+
+#: .\pages\forms.py:36
+msgid ""
+"Skills & Competences: Please indicate skills and competences that are "
+"relevant for your research field(s) and are part of your expertise in the "
+"area (max. 1000 characters)."
+msgstr ""
+
+#: .\pages\forms.py:36
+#, fuzzy
+#| msgid "Skills and competences"
+msgid "Please enter skills and competences"
+msgstr "Abilități și competențe"
+
+#: .\pages\forms.py:38 .\pages\models.py:38
+msgid "Scientific publications"
+msgstr "Publicații științifice"
+
+#: .\pages\forms.py:38
+msgid ""
+"Scientific Publications: Please provide a list of the most important and "
+"relevant publications and patents in your field of expertise (maximum of "
+"2000 characters)."
+msgstr ""
+
+#: .\pages\forms.py:38
+#, fuzzy
+#| msgid "Scientific publications"
+msgid "Please enter your scientific publications"
+msgstr "Publicații științifice"
+
+#: .\pages\forms.py:40 .\pages\models.py:39
+msgid "Related projects"
+msgstr "Proiecte asociate"
+
+#: .\pages\forms.py:40
+msgid ""
+"Previous related projects: Please provide a list of the most important and "
+"relevant projects in your field of expertise (international / EU / "
+"national). The projects listed here should be not older than 5 years (from "
+"2018 and newer). Please indicate title of projects, funding body, duration "
+"of project. (max. 2000 characters)."
+msgstr ""
+
+#: .\pages\forms.py:40
+#, fuzzy
+#| msgid "Related projects"
+msgid "Please enter related projects"
+msgstr "Proiecte asociate"
+
+#: .\pages\forms.py:42
+msgid ""
+"Significant Achievements (if the case): Please provide a list of the most "
+"important and relevant achievements in your field of expertise "
+"(international / EU / national). For example, significant exhibitions, "
+"conferences, actions your organised. The actions listed here should be not "
+"older than 5 years (from 2018 and newer). Please indicate title of the event "
+"and the year (max. 2000 characters)."
+msgstr ""
+
+#: .\pages\forms.py:42
+msgid "Please enter related achievements"
+msgstr "Vă rugăm introduceți realizările asociate"
+
+#: .\pages\forms.py:44 .\pages\models.py:41
+msgid "Other information"
+msgstr "Alte informații"
+
+#: .\pages\forms.py:44
+msgid ""
+"Other: Please list here any other added value you can bring as a potential "
+"partner in a Horizon Europe proposal (for example, collaboration with civil "
+"society organisations, activities that involved citizens, etc.) (max. 1000 "
+"characters)."
+msgstr ""
 
 #: .\pages\models.py:8
 msgid "News title"
@@ -39,6 +253,25 @@ msgstr "Data publicării"
 msgid "News"
 msgstr "Știri"
 
-#: .\templates\pages\home.html:9
-msgid "Welcome"
-msgstr "Bine ați venit"
+#: .\pages\models.py:19
+msgid "Horizon Europe programm of interest"
+msgstr "Programe de interes Horizon Europe"
+
+#: .\pages\models.py:20
+msgid "Horizon Europe programm description"
+msgstr "Descriere program Horizon Europe"
+
+#: .\pages\models.py:35
+msgid "programm of interest"
+msgstr "program de interes"
+
+#: .\pages\models.py:44
+msgid "EOI"
+msgstr "EOI"
+
+#: .\pages\models.py:45
+msgid "EOIs"
+msgstr "EOIs"
+
+#~ msgid "Welcome"
+#~ msgstr "Bine ați venit"

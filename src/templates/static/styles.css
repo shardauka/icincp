@@ -1797,6 +1797,15 @@ body {
 .lh-9 {
   line-height: 1.9; }
 
+.label-fix label{
+  display: flex!important; 
+  align-items: center!important;
+}
+
+.label-fix label input{
+  margin-right: 10px!important;
+}
+
 h3,
 h4,
 h5 {

@@ -34,132 +34,100 @@
                         <div class="col-md-6">
                             <div class="single-form">
                                 {{ form.first_name }}
+                                {{ form.first_name.errors }}
                             </div>
                         </div>
+                        
                         <div class="col-md-6">
                             <div class="single-form">
                                 {{ form.last_name }}
+                                {{ form.last_name.errors }}
                             </div>
                         </div>
                         <div class="col-md-8">
                             <div class="single-form">
                                 {{ form.organization_pozition }}
+                                {{ form.organization_pozition.errors }}
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="single-form">
                                 {{ form.email }}
+                                <div >{{ form.email.errors }}</div>
                             </div>
                         </div>
                         <div class="col-md-8">
                             <div class="single-form">
                                 {{ form.organization_name }}
+                                {{ form.organization_name.errors }}
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="single-form">
                                 {{ form.organization_acronym }}
+                                {{ form.organization_acronym.errors }}
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="single-form">
                                 {{ form.research_fields }}
+                                {{ form.research_fields.errors }}
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="single-form">
                                 {{ form.key_words }}
+                                {{ form.key_words.errors }}
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="single-form">
                                 {{ form.organization_short_description }}
+                                {{ form.organization_short_description.errors }}
                             </div>
                         </div>
                         <div class="col-md-12">
                             <p>Horizon Europe programme(s) of interest:</p>
+                            
                             <div class="single-form">
+                                {% for i in form.hepoi %}
                                 <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
-                                    <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">ERC</span></div>
+                                    <div class="label-fix">{{i}}</div>
+                                    {{i.label}}
                                 </label>
-                                <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
-                                    <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">MSCA</span></div>
-                                </label>
-                                <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
-                                    <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">CL1 - HEALTH</span></div>
-                                </label>
-                                <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
-                                    <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">CL2 - CULTURE</span></div>
-                                </label>
-                                <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
-                                    <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">CL3 - Civil Security for Society</span></div>
-                                </label>
-                                <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
-                                    <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">CL4 - Digital</span></div>
-                                </label>
-                                <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
-                                    <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">CL5 - Climate</span></div>
-                                </label>
-                                <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
-                                    <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">CL6 - Food</span></div>
-                                </label>
-                                <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
-                                    <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">Widening&ERA</span></div>
-                                </label>
-                                <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
-                                    <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">Mission Cancer</span></div>
-                                </label>
-                                <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
-                                    <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">Mission Climate</span></div>
-                                </label>
-                                <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
-                                    <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">Mission 100 Cities</span></div>
-                                </label>
-                                <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
-                                    <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">Mission Soil</span></div>
-                                </label>
-                                <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
-                                    <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">Mission Oceans</span></div>
-                                </label>
+                                {% endfor %}
+                                {{form.hepoi.errors}}
                             </div>
+
                         </div>
                         <div class="col-md-12">
                             <div class="single-form">
                                 {{ form.department_short_description }}
+                                {{form.department_short_description.errors}}
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="single-form">
                                 {{ form.skills_competences }}
+                                {{ form.skills_competences.errors }}
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="single-form">
                                 {{ form.scientific_publication }}
+                                {{ form.scientific_publication.errors }}
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="single-form">
                                 {{ form.related_projects }}
+                                {{ form.related_projects.errors }}
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="single-form">
                                 {{ form.achievements }}
+                                {{ form.achievements.errors }}
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -170,7 +138,7 @@
                         <div class="col-md-12">
                             <div class="single-form">
                                 <label style="display: flex; align-items: center;">
-                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="ERC" required="" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
+                                    <input type="checkbox" data-testid="input" class="cCdhN7" value="accept_terms" required="" aria-required="true" aria-checked="false" name="comp-lde6k3q9">
                                     <div style="margin-left: 10px;"><span data-testid="text" class="eW1tpy">I agree that this EOI is made public.*</span></div>
                                 </label>
                             </div>
@@ -179,6 +147,7 @@
                     <button class="btn btn-lg btn-purple btn-radious">Submit EOI</button>
                 </div>
                 </form>
+                {{form.errors}}
             </div>
         </div>
     </div>
