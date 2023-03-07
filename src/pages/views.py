@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
 from pages.models import News
+from .forms import EOI_Form
 
 def home_view(request, *args, **kwargs):
     context={'news': News.objects.get(id=1)}
@@ -8,7 +9,10 @@ def home_view(request, *args, **kwargs):
 
 
 def partner_search(request):
-    context = {}
+    form = EOI_Form()
+    if request.method == 'POST':
+        print("dsa")
+    context = {'form': form}
     return render(request, 'pages/partner_search.html', context)
 
 def contact_view(request):
