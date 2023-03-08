@@ -147,5 +147,13 @@ MEDIA_ROOT = Path.home().joinpath(BASE_DIR, 'uploads')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Email settings
 
-print(LOCALE_PATHS)
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'mail.ici.ro'
+EMAIL_HOST_USER = 'sc@ici.ro'
+EMAIL_HOST_PASSWORD = 'Icidev12!@'
+EMAIL_PORT = 465
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

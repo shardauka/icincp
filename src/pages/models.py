@@ -1,5 +1,7 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from django.template.loader import get_template
+from django.core.mail import EmailMultiAlternatives
 
 import datetime
 
@@ -47,3 +49,15 @@ class EOI(models.Model):
     def __str__(self) -> str:
         return self.email + ' ' + self.first_name + ' ' + self.last_name
     
+
+    def send_email(self):
+        plaintext = get_template('email/eoi_mail.txt')
+        htmly     = get_template('email/eoi_mail.html')
+        d = { 'eoi': self}
+        subject, from_email, to = 'Expression of interest', 'no-reply@ici.ro', 'mihai.apostol@ici.ro'
+        text_content = plaintext.render(d)
+        html_content = htmly.render(d)
+        msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+        msg.attach_alternative(html_content, "text/html")
+        msg.send()
+        return 0

@@ -1,0 +1,26 @@
+
+{{eoi}} <br>
+
+{{eoi.first_name}} <br>
+{{eoi.last_name}} <br>
+{{eoi.email}} <br>
+{{eoi.organization_pozition}} <br>
+{{eoi.organization_name}} <br>
+{{eoi.organization_acronym}} <br>
+{{eoi.organization_short_description}} <br>
+{{eoi.research_fields}} <br>
+{{eoi.key_words}} <br>
+
+<br>
+Programm of interest: <br>
+{% for hepoi in eoi.hepoi.values %}
+    {{hepoi.name}} - {{hepoi.description}} <br>
+{% endfor %}
+<br>
+
+{{eoi.department_short_description}} <br>
+{{eoi.skills_competences}} <br>
+{{eoi.scientific_publication}} <br>
+{{eoi.related_projects}} <br>
+{{eoi.achievements}} <br>
+{{eoi.other}} <br>

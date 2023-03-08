@@ -21,6 +21,7 @@ def partner_search(request):
             for i in hepoi:
                 eoi.hepoi.add(i)
             eoi.save()
+            eoi.send_email()
     context = {'form': form}
     return render(request, 'pages/partner_search.html', context)
 
