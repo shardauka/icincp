@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 
-from pages.models import News, EOI
+from pages.models import News, EOI, GeneralPage
 from .forms import EOI_Form, HEPoi
+
 
 def home_view(request, *args, **kwargs):
     context={'news': News.objects.get(id=1)}
@@ -32,3 +33,9 @@ def contact_view(request):
 def blog_view(request):
     context = {}
     return render(request, 'pages/blog_type.html', context)
+
+def general_page_view(request, slug):
+    page = GeneralPage.objects.get(slug=slug)
+    print(page.get_absolute_url())
+    context = {'page': page}
+    return render(request, 'pages/general_page.html', context)

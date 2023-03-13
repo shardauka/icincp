@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from pages.views import home_view, partner_search, contact_view, blog_view
+from pages.views import home_view, partner_search, contact_view, blog_view, general_page_view
 from django.conf.urls.i18n import i18n_patterns
+
+
+admin.site.site_header = 'NCP-ICI Admin Panel'
 
 
 urlpatterns = [
@@ -27,9 +30,12 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
+    path('tinymce/', include('tinymce.urls')),
     path('admin/', admin.site.urls),
     path('', home_view, name='home'),
     path('partnersearch', partner_search, name='partnersearch'),
     path('contact', contact_view, name='contact'),
     path('blogpage', blog_view, name='blogpage'),
+    path('content/<slug:slug>/', general_page_view, name='contentpage'),
+    
 )

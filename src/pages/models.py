@@ -2,6 +2,7 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.template.loader import get_template
 from django.core.mail import EmailMultiAlternatives
+from django.urls import reverse
 
 import datetime
 
@@ -61,3 +62,17 @@ class EOI(models.Model):
         msg.attach_alternative(html_content, "text/html")
         msg.send()
         return 0
+    
+
+
+class GeneralPage(models.Model):
+    title = models.CharField(max_length = 64, help_text=_('News title'))
+    slug = models.SlugField(unique=True, help_text=_('URL address of the page'))
+    content = models.TextField(blank=True, null=True, help_text=_('Content'))
+
+    class Meta:
+        verbose_name = _('General page')
+        verbose_name_plural = _('General pages')
+    
+    def get_absolute_url(self):
+        return reverse('contentpage', kwargs={'slug': self.slug})
