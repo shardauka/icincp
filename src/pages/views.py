@@ -39,3 +39,14 @@ def general_page_view(request, slug):
     print(page.get_absolute_url())
     context = {'page': page}
     return render(request, 'pages/general_page.html', context)
+
+
+def news_page_view(request):
+    news = News.objects.all()
+    context = {'news': news}
+    return render(request, 'pages/news.html', context)
+
+def news_detail_view(request, slug):
+    news_detail = News.objects.get(slug=slug)
+    context = {'news': news_detail}
+    return render(request, 'pages/news_detail.html', context)

@@ -5,6 +5,8 @@ from tinymce.widgets import TinyMCE
 
 
 class NewsAdmin(admin.ModelAdmin):
+    list_display  = ['title', 'short_description', 'slug']
+    prepopulated_fields = {"slug": ("title",)}
     def formfield_for_dbfield(self, db_field, **kwargs):
         if db_field.name in ['content', 'content_ro', 'content_en']:
             kwargs['widget'] = TinyMCE(attrs={'cols': 80, 'rows': 20})
@@ -12,7 +14,9 @@ class NewsAdmin(admin.ModelAdmin):
 
 
 class GeneralPageAdmin(admin.ModelAdmin):
-    def formfield_for_dbfield(self, db_field, **kwargs):
+    list_display  = ['title', 'slug']
+    prepopulated_fields = {"slug": ("title",)}
+    def formfield_for_dbfield(self, db_field, **kwargs): 
         if db_field.name in ['content', 'content_ro', 'content_en']:
             kwargs['widget'] = TinyMCE(attrs={'cols': 80, 'rows': 20})
         return super(GeneralPageAdmin, self).formfield_for_dbfield(db_field,**kwargs)
