@@ -70,10 +70,19 @@
                                     <a href="/contact">Contact</a>
                                 </li>
                                 <li>
-                                    <a href="#">Language</a>
+                                    <a href="javascript:void(0);">Language</a>
                                     <ul class="dropdawn">
-                                        <li><a href="#">Romanian</a></li>
-                                        <li><a href="#">English</a></li>
+                                        <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                                            <input name="next" type="hidden" value="{{ redirect_to }}">
+                                            {% get_current_language as LANGUAGE_CODE %}
+                                            {% get_available_languages as LANGUAGES %}
+                                            {% get_language_info_list for LANGUAGES as languages %}
+                                            
+                                            {% for language in languages %}
+                                                <li><a href="#" onclick="change_language(this, '{{ language.code }}')">{{ language.name_local }} ({{ language.code }})</a></li>
+  
+                                            {% endfor %}
+                                        </form>
                                     </ul>
                                     <!-- <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
                                         <input name="next" type="hidden" value="{{ redirect_to }}">
@@ -271,5 +280,19 @@
         {# Override this in templates to add extra javascript #}
     {% endblock %}
 </body>
+<script>
+function change_language(element, lang){
+    form = element.parentElement.parentElement
+    select = document.createElement('select')
+    select.name = "language"
+    option = document.createElement('option')
+    option.value = lang
+    option.selected = lang
+    select.appendChild(option)
+    form.appendChild(select)
+    form.submit()
+}
+</script>
+
 
 </html>
