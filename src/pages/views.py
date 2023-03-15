@@ -5,7 +5,7 @@ from .forms import EOI_Form, HEPoi
 
 
 def home_view(request, *args, **kwargs):
-    context={'news': News.objects.get(id=1)}
+    context={'news': News.get_lates_news}
     return render(request, "pages/home.html", context)
 
 

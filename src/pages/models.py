@@ -21,6 +21,10 @@ class News(models.Model):
     
     def get_absolute_url(self):
         return reverse('news_detail', kwargs={'slug': self.slug})
+    
+    def get_lates_news():
+        return News.objects.all().order_by("-id")[0:3]
+
 
 
 class HEPoi(models.Model):

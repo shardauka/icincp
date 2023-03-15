@@ -25,6 +25,7 @@
                 <div class="blog-single-content">
                     <div class="block-paragraph_block">
                         {{news.title}}
+                        {{news.date_published|date:"d M, Y" }}
                         {{news.content|safe}}
                     </div>
                 </div>
