@@ -40,6 +40,8 @@ urlpatterns += i18n_patterns(
     path('news/', news_page_view, name='news'),
     path('news-detail/<slug:slug>/', news_detail_view, name='news_detail'),
     path('<slug:slug>/', general_page_view, name='contentpage'),
+    
+    path('storage/<slug:slug>/', general_page_view, name='storage'),
 
     
 )

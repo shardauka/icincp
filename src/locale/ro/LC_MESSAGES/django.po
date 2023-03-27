@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-07 13:40+0200\n"
+"POT-Creation-Date: 2023-03-27 10:53+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
 "2:1));\n"
 
-#: .\pages\forms.py:6 .\pages\models.py:26
+#: .\pages\forms.py:6 .\pages\models.py:38
 msgid "First name"
 msgstr "Nume"
 
@@ -27,7 +27,7 @@ msgstr "Nume"
 msgid "Please enter your first name"
 msgstr "Vă rugăm introduceți numele"
 
-#: .\pages\forms.py:8 .\pages\models.py:27
+#: .\pages\forms.py:8 .\pages\models.py:39
 msgid "Last name"
 msgstr "Prenume"
 
@@ -35,7 +35,7 @@ msgstr "Prenume"
 msgid "Please enter your last name"
 msgstr "Vă rugăm introduceți prenumele"
 
-#: .\pages\forms.py:10 .\pages\models.py:29
+#: .\pages\forms.py:10 .\pages\models.py:41
 msgid "Organization pozition"
 msgstr "Poziția în organizație"
 
@@ -49,7 +49,7 @@ msgstr "Poziția în organizație"
 msgid "Please enter your pozition in the organization"
 msgstr "Poziția în organizație"
 
-#: .\pages\forms.py:12 .\pages\models.py:28
+#: .\pages\forms.py:12 .\pages\models.py:40
 msgid "Email address"
 msgstr "Adresa de email"
 
@@ -61,7 +61,7 @@ msgstr "Email"
 msgid "Please enter your email"
 msgstr "Vă rugăm introduceți adresa de email"
 
-#: .\pages\forms.py:14 .\pages\models.py:30
+#: .\pages\forms.py:14 .\pages\models.py:42
 msgid "Organization name"
 msgstr "Numele organizației"
 
@@ -71,7 +71,7 @@ msgstr "Numele organizației"
 msgid "Please enter your organization name"
 msgstr "Numele organizației"
 
-#: .\pages\forms.py:16 .\pages\models.py:31
+#: .\pages\forms.py:16 .\pages\models.py:43
 msgid "Organization acronym"
 msgstr "Acronimul organizației"
 
@@ -81,7 +81,7 @@ msgstr "Acronimul organizației"
 msgid "Please enter your organization acronym"
 msgstr "Acronimul organizației"
 
-#: .\pages\forms.py:18 .\pages\models.py:32
+#: .\pages\forms.py:18 .\pages\models.py:44
 #, fuzzy
 #| msgid "Short description"
 msgid "Organization short description"
@@ -95,7 +95,7 @@ msgstr "Scurtă descriere a organizației (max. 1000 caractere)"
 msgid "Please enter a short description of your organization"
 msgstr "Vă rugăm introduceți o scurtă descriere a organizației dumneavoastră"
 
-#: .\pages\forms.py:20 .\pages\models.py:33
+#: .\pages\forms.py:20 .\pages\models.py:45
 msgid "Research fields"
 msgstr "Arii de cercetare"
 
@@ -113,7 +113,7 @@ msgstr ""
 msgid "Please enter research fields"
 msgstr "Arii de cercetare"
 
-#: .\pages\forms.py:22 .\pages\models.py:34
+#: .\pages\forms.py:22 .\pages\models.py:46
 msgid "Key words"
 msgstr "Cuvinte cheie"
 
@@ -133,8 +133,8 @@ msgstr "Vă rugăm introduceți cuvinte cheie"
 msgid "Please select at least one programm of interest"
 msgstr "Vă rugăm să alegeți cel puțin un program de interes"
 
-#: .\pages\forms.py:34 .\pages\forms.py:42 .\pages\models.py:36
-#: .\pages\models.py:40
+#: .\pages\forms.py:34 .\pages\forms.py:42 .\pages\models.py:48
+#: .\pages\models.py:52
 #, fuzzy
 #| msgid "Short description"
 msgid "Department short description"
@@ -152,9 +152,10 @@ msgstr ""
 
 #: .\pages\forms.py:34
 msgid "Please enter a short description of your department"
-msgstr "Vă rugăm introduceți o scurtă descriere a departamentului dumneavoastră"
+msgstr ""
+"Vă rugăm introduceți o scurtă descriere a departamentului dumneavoastră"
 
-#: .\pages\forms.py:36 .\pages\models.py:37
+#: .\pages\forms.py:36 .\pages\models.py:49
 msgid "Skills and competences"
 msgstr "Abilități și competențe"
 
@@ -171,7 +172,7 @@ msgstr ""
 msgid "Please enter skills and competences"
 msgstr "Abilități și competențe"
 
-#: .\pages\forms.py:38 .\pages\models.py:38
+#: .\pages\forms.py:38 .\pages\models.py:50
 msgid "Scientific publications"
 msgstr "Publicații științifice"
 
@@ -188,7 +189,7 @@ msgstr ""
 msgid "Please enter your scientific publications"
 msgstr "Publicații științifice"
 
-#: .\pages\forms.py:40 .\pages\models.py:39
+#: .\pages\forms.py:40 .\pages\models.py:51
 msgid "Related projects"
 msgstr "Proiecte asociate"
 
@@ -221,7 +222,7 @@ msgstr ""
 msgid "Please enter related achievements"
 msgstr "Vă rugăm introduceți realizările asociate"
 
-#: .\pages\forms.py:44 .\pages\models.py:41
+#: .\pages\forms.py:44 .\pages\models.py:53
 msgid "Other information"
 msgstr "Alte informații"
 
@@ -233,45 +234,92 @@ msgid ""
 "characters)."
 msgstr ""
 
-#: .\pages\models.py:8
+#: .\pages\models.py:11 .\pages\models.py:78
 msgid "News title"
 msgstr "Titlu știre"
 
-#: .\pages\models.py:9
+#: .\pages\models.py:12
+msgid "URL address of the news detail page"
+msgstr ""
+
+#: .\pages\models.py:13
 msgid "Short description"
 msgstr "Scurtă descriere"
 
-#: .\pages\models.py:10
+#: .\pages\models.py:14 .\pages\models.py:80
 msgid "Content"
 msgstr "Conținut"
 
-#: .\pages\models.py:11
+#: .\pages\models.py:15
 msgid "Published date"
 msgstr "Data publicării"
 
-#: .\pages\models.py:14 .\pages\models.py:15
+#: .\pages\models.py:19 .\pages\models.py:20
 msgid "News"
 msgstr "Știri"
 
-#: .\pages\models.py:19
+#: .\pages\models.py:31
 msgid "Horizon Europe programm of interest"
 msgstr "Programe de interes Horizon Europe"
 
-#: .\pages\models.py:20
+#: .\pages\models.py:32
 msgid "Horizon Europe programm description"
 msgstr "Descriere program Horizon Europe"
 
-#: .\pages\models.py:35
+#: .\pages\models.py:47
 msgid "programm of interest"
 msgstr "program de interes"
 
-#: .\pages\models.py:44
+#: .\pages\models.py:56
 msgid "EOI"
 msgstr "EOI"
 
-#: .\pages\models.py:45
+#: .\pages\models.py:57
 msgid "EOIs"
 msgstr "EOIs"
+
+#: .\pages\models.py:79
+msgid "URL address of the page"
+msgstr "Adresa URL a paginii"
+
+#: .\pages\models.py:83
+msgid "General page"
+msgstr "Pagină generală"
+
+#: .\pages\models.py:84
+msgid "General pages"
+msgstr "Pagini generale"
+
+#: .\pages\models.py:92
+#, fuzzy
+#| msgid "First name"
+msgid "File name"
+msgstr "Numele fișierului"
+
+#: .\pages\models.py:93
+msgid "URL address of the file"
+msgstr "Adresa URL a fișierului"
+
+#: .\pages\models.py:96
+#, fuzzy
+#| msgid "First name"
+msgid "File storage"
+msgstr "Fișier stocat"
+
+#: .\pages\models.py:97
+#, fuzzy
+#| msgid "First name"
+msgid "Files storage"
+msgstr "Fișiere stocate"
+
+#: .\templates\pages\news.html:10
+msgid "News List"
+msgstr "Listă anunțuri"
+
+#, fuzzy
+#~| msgid "First name"
+#~ msgid "File stogage"
+#~ msgstr "Numele fișierului"
 
 #~ msgid "Welcome"
 #~ msgstr "Bine ați venit"

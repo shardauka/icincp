@@ -85,3 +85,13 @@ class GeneralPage(models.Model):
     
     def get_absolute_url(self):
         return reverse('contentpage', kwargs={'slug': self.slug})
+    
+
+class FileStorage(models.Model):
+    file = models.FileField(upload_to='uploads/')
+    name = models.CharField(max_length = 64, help_text=_('File name'))
+    slug = models.SlugField(unique=True, help_text=_('URL address of the file'))
+
+    class Meta:
+        verbose_name = _('File storage')
+        verbose_name_plural = _('Files storage')

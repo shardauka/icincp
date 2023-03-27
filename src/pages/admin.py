@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.db import models
-from .models import News, HEPoi, EOI, GeneralPage
+from .models import News, HEPoi, EOI, GeneralPage, FileStorage
 from tinymce.widgets import TinyMCE
 
 
@@ -26,3 +26,4 @@ admin.site.register(News, NewsAdmin)
 admin.site.register(HEPoi)
 admin.site.register(EOI)
 admin.site.register(GeneralPage, GeneralPageAdmin)
+admin.site.register(FileStorage)
