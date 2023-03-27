@@ -22,8 +22,12 @@ class GeneralPageAdmin(admin.ModelAdmin):
         return super(GeneralPageAdmin, self).formfield_for_dbfield(db_field,**kwargs)
 
 
+class FileStorageAdmin(admin.ModelAdmin):
+    list_display  = ['name', 'slug', 'file', 'get_absolute_url']
+
+
 admin.site.register(News, NewsAdmin)
 admin.site.register(HEPoi)
 admin.site.register(EOI)
 admin.site.register(GeneralPage, GeneralPageAdmin)
-admin.site.register(FileStorage)
+admin.site.register(FileStorage, FileStorageAdmin)
