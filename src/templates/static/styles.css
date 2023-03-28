@@ -11373,7 +11373,7 @@ PLEASE PRESS CTRL+F ON YOUR KEYBOARD THEN YOU SEARCH ANY CLASS OR ANY SECTION IN
 
 @media screen and (max-width: 991px) {
   .banner-area {
-    padding: 100px 0px 0px 0px; }
+    padding: 150px 0px 0px 0px; }
   .banner-content {
     padding-left: 0px;
     max-width: 70%;
@@ -11540,7 +11540,7 @@ PLEASE PRESS CTRL+F ON YOUR KEYBOARD THEN YOU SEARCH ANY CLASS OR ANY SECTION IN
 
 @media screen and (max-width: 575px) {
   .banner-area {
-    padding: 100px 0px 0px 0px; }
+    padding: 150px 0px 0px 0px; }
   .banner-circle .cloud {
     display: none; }
   .banner-circle .circle {
@@ -13438,8 +13438,8 @@ PLEASE PRESS CTRL+F ON YOUR KEYBOARD THEN YOU SEARCH ANY CLASS OR ANY SECTION IN
 
 .seo-banner-img {
   position: relative;
-  padding-left: 50px;
-  animation: seo-man 2s infinite alternate;
+  padding-left: 0px;
+  /* animation: seo-man 2s infinite alternate; */
   transform-origin: right; }
 
 .sv-mike-animation {
@@ -13579,6 +13579,7 @@ PLEASE PRESS CTRL+F ON YOUR KEYBOARD THEN YOU SEARCH ANY CLASS OR ANY SECTION IN
       left: 50%;
       transform: translateX(-50%); }
     .prefer-bg-image .prefer-man {
+      position: relative;
       max-width: 60%;
       left: 50%;
       transform: translateX(-50%);

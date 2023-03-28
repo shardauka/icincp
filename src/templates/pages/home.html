@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load i18n %}
+{% load static %}
 
 {% block content %}
 <!--banner area start here-->
@@ -124,7 +125,7 @@
             </div> 
             <div class="seo-img-area">
                 <div class="seo-banner-img">
-                    <img class="sv-svp" src="https://horizoneuropencpportal.eu/sites/default/files/styles/scale_global_middle/public/2022-05/com-training.png?itok=5-YoitJf" alt>
+                    <img class="sv-svp" src="{% static 'images/com-training.png' %}" alt>
                 </div>
             </div>
         </div>
@@ -135,8 +136,7 @@
 <!--prefer area start here-->
 <section class="prefer-area section-padding relative" style="margin-bottom: 100px; margin-top: 50px;">
     <div class="prefer-bg-image">
-        <img class="prefer-man" src="https://horizoneuropencpportal.eu/sites/default/files/styles/scale_global_/public/2023-02/ec_rtd_eu-missions-general-banner.jpg?itok=Rle77kA6" alt>
-        <img class="prefer-bg" src="images/future-bg.png" alt>
+        <img class="prefer-man" src="{% static 'images/com-training.png' %}" alt>
     </div>
     <div class="container">
         <div class="row justify-content-end">

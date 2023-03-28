@@ -568,10 +568,10 @@
             allfunction.featureEvent();
             allfunction.form_click();
             allfunction.cart_close();
-            allfunction.case_study_slick();
+            // allfunction.case_study_slick();
             allfunction.clients_owl();
             allfunction.pricing_click();
-            allfunction.home_two_study_slick();
+            // allfunction.home_two_study_slick();
             allfunction.home_two_pricing();
             allfunction.home_two_slider();
             allfunction.home_three_counter();
@@ -583,8 +583,8 @@
             allfunction.select();
             allfunction.isotopActivation();
             allfunction.blog_mesonry();
-            allfunction.home_two_logo_slick();
-            allfunction.niceScrollBar();
+            // allfunction.home_two_logo_slick();
+            // allfunction.niceScrollBar();
             allfunction.spinner();
             allfunction.ui_crad();
             allfunction.elevated_zoom();
