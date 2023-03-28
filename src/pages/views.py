@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect, get_object_or_404
 
-from pages.models import News, EOI, GeneralPage
+from pages.models import News, EOI, GeneralPage, FileStorage
 from .forms import EOI_Form, HEPoi
+import os
+from django.http import HttpResponse
+
 
 
 def home_view(request, *args, **kwargs):
@@ -50,3 +53,14 @@ def news_detail_view(request, slug):
     news_detail = News.objects.get(slug=slug)
     context = {'news': news_detail}
     return render(request, 'pages/news_detail.html', context)
+
+def storagefile_view(request, slug):
+    file = FileStorage.objects.get(slug=slug)
+    ext = os.path.splitext(file.file.path)[1].replace('.', '')
+    if ext in ['pdf']:
+        content_type = 'application/' + ext
+    else:
+        content_type = 'image/' + ext
+    response = HttpResponse(file.file, content_type=content_type)
+    response['Content-Disposition'] = 'filename='+file.file.name
+    return response
