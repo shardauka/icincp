@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-27 10:53+0300\n"
+"POT-Creation-Date: 2023-03-29 15:48+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,10 +44,8 @@ msgid "Position in organisation"
 msgstr "Poziția în organizație"
 
 #: .\pages\forms.py:10
-#, fuzzy
-#| msgid "Position in organisation"
 msgid "Please enter your pozition in the organization"
-msgstr "Poziția în organizație"
+msgstr "Vă rugăm introduceți poziția în organizație"
 
 #: .\pages\forms.py:12 .\pages\models.py:40
 msgid "Email address"
@@ -66,24 +64,18 @@ msgid "Organization name"
 msgstr "Numele organizației"
 
 #: .\pages\forms.py:14
-#, fuzzy
-#| msgid "Organization name"
 msgid "Please enter your organization name"
-msgstr "Numele organizației"
+msgstr "Vă rugăm introduceți numele organizației"
 
 #: .\pages\forms.py:16 .\pages\models.py:43
 msgid "Organization acronym"
 msgstr "Acronimul organizației"
 
 #: .\pages\forms.py:16
-#, fuzzy
-#| msgid "Organization acronym"
 msgid "Please enter your organization acronym"
-msgstr "Acronimul organizației"
+msgstr "Vă rugăm introduceți acronimul organizației dumneavoastră"
 
 #: .\pages\forms.py:18 .\pages\models.py:44
-#, fuzzy
-#| msgid "Short description"
 msgid "Organization short description"
 msgstr "Scurtă descriere a organizației"
 
@@ -108,10 +100,8 @@ msgstr ""
 "pentru propuerile Horizon Europe)"
 
 #: .\pages\forms.py:20
-#, fuzzy
-#| msgid "Research fields"
 msgid "Please enter research fields"
-msgstr "Arii de cercetare"
+msgstr "Vă rugăm introduceți ariile de cercetare"
 
 #: .\pages\forms.py:22 .\pages\models.py:46
 msgid "Key words"
@@ -135,10 +125,8 @@ msgstr "Vă rugăm să alegeți cel puțin un program de interes"
 
 #: .\pages\forms.py:34 .\pages\forms.py:42 .\pages\models.py:48
 #: .\pages\models.py:52
-#, fuzzy
-#| msgid "Short description"
 msgid "Department short description"
-msgstr "Scurtă descriere"
+msgstr "Scurtă descriere a departamentului"
 
 #: .\pages\forms.py:34
 msgid ""
@@ -149,6 +137,12 @@ msgid ""
 "shows the strengths of your department as a partner in a Horizon Europe  "
 "proposal) (max. 2000 characters)."
 msgstr ""
+"Scurtă descriere a departamentului: vă rugăm să furnizați o descriere a "
+"catedrei/școalii care intenționează să participe la propunere Horizon "
+"Europe. Vă rugăm să menționați aici: expertiză relevantă, infrastructură "
+"relevantă, rețele/parteneriate/colaborări relevante existente (tot ce arată "
+"punctele forte ale departamentului dumneavoastră ca partener într-o "
+"propunere Horizon Europe) (max. 2000 de caractere)."
 
 #: .\pages\forms.py:34
 msgid "Please enter a short description of your department"
@@ -165,12 +159,13 @@ msgid ""
 "relevant for your research field(s) and are part of your expertise in the "
 "area (max. 1000 characters)."
 msgstr ""
+"Abilități și competențe: Vă rugăm să indicați abilitățile și competențele "
+"care sunt relevant pentru domeniul (domeniile) dvs. de cercetare și fac "
+"parte din expertiza dvs (max. 1000 de caractere)."
 
 #: .\pages\forms.py:36
-#, fuzzy
-#| msgid "Skills and competences"
 msgid "Please enter skills and competences"
-msgstr "Abilități și competențe"
+msgstr "Vă rugăm introduceți abilitățile și competențele dumneavoastră"
 
 #: .\pages\forms.py:38 .\pages\models.py:50
 msgid "Scientific publications"
@@ -182,12 +177,13 @@ msgid ""
 "relevant publications and patents in your field of expertise (maximum of "
 "2000 characters)."
 msgstr ""
+"Publicații științifice: Vă rugăm să furnizați o listă cu cele mai importante "
+"publicații și brevete relevante în domeniul dumneavoastră de expertiză "
+"(maximum de 2000 de caractere)."
 
 #: .\pages\forms.py:38
-#, fuzzy
-#| msgid "Scientific publications"
 msgid "Please enter your scientific publications"
-msgstr "Publicații științifice"
+msgstr "Vă rugăm introduceți ublicațiile științifice"
 
 #: .\pages\forms.py:40 .\pages\models.py:51
 msgid "Related projects"
@@ -201,6 +197,12 @@ msgid ""
 "2018 and newer). Please indicate title of projects, funding body, duration "
 "of project. (max. 2000 characters)."
 msgstr ""
+"Proiecte conexe anterioare: vă rugăm să furnizați o listă cu cele mai "
+"importante proiecte relevante în domeniul dumneavoastră de expertiză "
+"(internațional/UE/național). Proiectele enumerate aici nu trebuie să fie mai "
+"vechi de 5 ani (de la 2018 și mai nou). Vă rugăm să indicați titlul "
+"proiectelor, organismul de finanțare, durata de proiect. (max. 2000 de "
+"caractere)."
 
 #: .\pages\forms.py:40
 #, fuzzy
@@ -217,6 +219,12 @@ msgid ""
 "older than 5 years (from 2018 and newer). Please indicate title of the event "
 "and the year (max. 2000 characters)."
 msgstr ""
+"Realizări semnificative (dacă este cazul): vă rugăm să furnizați o listă cu "
+"cele mai realizări importante și relevante în domeniul dumneavoastră de "
+"expertiză(internațional / UE / național). De exemplu, expoziții "
+"semnificative, conferințe, acțiuni pe care le-ați organizat. Acțiunile "
+"enumerate aici nu ar trebui să fie mai vechi de 5 ani (din 2018 și mai nou). "
+"Vă rugăm să indicați titlul evenimentului și anul (max. 2000 de caractere)."
 
 #: .\pages\forms.py:42
 msgid "Please enter related achievements"
@@ -233,6 +241,10 @@ msgid ""
 "society organisations, activities that involved citizens, etc.) (max. 1000 "
 "characters)."
 msgstr ""
+"Altele: Vă rugăm să enumerați aici orice altă valoare adăugată pe care o "
+"puteți aduce ca potențial partener într-o propunere Orizont Europa (de "
+"exemplu, colaborare cu civili organizații ale societății, activități care au "
+"implicat cetățeni etc.) (max. 1000 caractere)."
 
 #: .\pages\models.py:11 .\pages\models.py:78
 msgid "News title"
@@ -240,7 +252,7 @@ msgstr "Titlu știre"
 
 #: .\pages\models.py:12
 msgid "URL address of the news detail page"
-msgstr ""
+msgstr "Adresa URL a paginii de detaliere a unei știri"
 
 #: .\pages\models.py:13
 msgid "Short description"
@@ -254,7 +266,8 @@ msgstr "Conținut"
 msgid "Published date"
 msgstr "Data publicării"
 
-#: .\pages\models.py:19 .\pages\models.py:20
+#: .\pages\models.py:19 .\pages\models.py:20 .\templates\base.html:64
+#: .\templates\base.html:132
 msgid "News"
 msgstr "Știri"
 
@@ -312,9 +325,226 @@ msgstr "Fișier stocat"
 msgid "Files storage"
 msgstr "Fișiere stocate"
 
+#: .\templates\base.html:43 .\templates\base.html:128
+msgid "Home"
+msgstr "Acasă"
+
+#: .\templates\base.html:46 .\templates\base.html:129
+msgid "HEu Proposal"
+msgstr "Propuneri HEu"
+
+#: .\templates\base.html:48
+msgid "Admissibility"
+msgstr "Admisibilitate"
+
+#: .\templates\base.html:49
+msgid "Types of Participants"
+msgstr "Tipuri de participanți"
+
+#: .\templates\base.html:50
+msgid "Eligibility"
+msgstr "Eligibilitate"
+
+#: .\templates\base.html:54 .\templates\base.html:130
+msgid "Partner Search"
+msgstr "Căutare partener"
+
+#: .\templates\base.html:57 .\templates\base.html:131
+msgid "Resources"
+msgstr "Resurse"
+
+#: .\templates\base.html:59
+msgid "General Resources"
+msgstr "Resurse generale"
+
+#: .\templates\base.html:60 .\templates\base.html:145
+msgid "CL4"
+msgstr "Cl4"
+
+#: .\templates\base.html:67
+#, fuzzy
+#| msgid "Content"
+msgid "Contact"
+msgstr "Contact"
+
+#: .\templates\base.html:70
+msgid "Language"
+msgstr "Limba"
+
+#: .\templates\base.html:111
+msgid "Get our help"
+msgstr "Obțineți ajutorul nostru"
+
+#: .\templates\base.html:115
+#| msgid "Content"
+msgid "Contact Us"
+msgstr "Contactați-ne"
+
+#: .\templates\base.html:125
+msgid "Links"
+msgstr "Link-uri"
+
+#: .\templates\base.html:139
+msgid "Info"
+msgstr "Info"
+
+#: .\templates\base.html:142 .\templates\pages\home.html:156
+msgid "Other HEu Clusters"
+msgstr "Alte clustere HEu "
+
+#: .\templates\base.html:143
+msgid "Ministry of Research, Innovation and Digitalization"
+msgstr "Ministerul Cercetării, Inovării și Digitalizării"
+
+#: .\templates\base.html:144
+msgid "European Union"
+msgstr "Uniunea Europeană"
+
+#: .\templates\base.html:152
+msgid "Data Policy"
+msgstr "Politica datelor"
+
+#: .\templates\base.html:155
+msgid "GDPR Policy"
+msgstr "Politica GDPR"
+
+#: .\templates\base.html:156
+msgid "Processing personal data"
+msgstr "Prelucrarea datelor cu caracter personal"
+
+#: .\templates\base.html:157
+msgid "Cookie Policy"
+msgstr "Politica de cookie-uri"
+
+#: .\templates\base.html:164
+msgid "get in touch"
+msgstr "Intrați în legătură"
+
+#: .\templates\base.html:167
+msgid "Address:"
+msgstr "Adresă"
+
+#: .\templates\base.html:167
+msgid "8-10, Maresal Averescu Avenue, sector 1, 011455, Bucharest, Romania"
+msgstr "Bd-ul Mareșal Averescu 8-10, 011455 sector 1, București, România"
+
+#: .\templates\base.html:168
+msgid "Phone:"
+msgstr "Telefon"
+
+#: .\templates\base.html:169
+msgid "E-Mail:"
+msgstr "E-Mail"
+
+#: .\templates\base.html:189
+msgid "All rights reserved."
+msgstr "Toate drepturile rezervate"
+
+#: .\templates\pages\home.html:16
+msgid "NCP@ICI BUCHAREST"
+msgstr "NCP@ICI BUCUREȘTI"
+
+#: .\templates\pages\home.html:18
+msgid ""
+"The mission of the NCP Unit is to provide information and assistance to "
+"research-innovation communities in Romania in order to participate in the "
+"Horizon Europe program."
+msgstr "Misiunea Unității NCP este de a oferi informații și asistență comunitățile de cercetare-inovare din România pentru a participa la Programul Horizon Europe."
+
+#: .\templates\pages\home.html:54
+msgid "Work programmes (WP) Horizon Europe 2023 - 2024"
+msgstr "Programe de lucru Horizon Europe 2023 - 2024"
+
+#: .\templates\pages\home.html:55 .\templates\pages\home.html:123
+#: .\templates\pages\home.html:156 .\templates\pages\home.html:159
+#: .\templates\pages\home.html:162
+msgid "Read more"
+msgstr "Citește mai mult"
+
+#: .\templates\pages\home.html:66 .\templates\pages\home.html:94
+msgid "ERC - European Research Council"
+msgstr "ERC - Consiliul European de Cercetare"
+
+#: .\templates\pages\home.html:68 .\templates\pages\home.html:96
+msgid "MSCA - Marie Sklodowska-Curie Actions"
+msgstr "MSCA - Acțiuni Marie Sklodowska-Curie"
+
+#: .\templates\pages\home.html:76
+msgid "Global Challenges"
+msgstr "Provocări globale"
+
+#: .\templates\pages\home.html:79
+msgid "EIC - European Innovation Council"
+msgstr "EIC - Consiliul European pentru Inovare"
+
+#: .\templates\pages\home.html:80
+msgid "EIE - European Innovation Ecosystems"
+msgstr "EIE - Ecosisteme europene de inovare"
+
+#: .\templates\pages\home.html:81
+msgid "EIT - European Institute for Innovation and Technology"
+msgstr "EIT - Institutul European pentru Inovare și Tehnologie"
+
+#: .\templates\pages\home.html:91
+msgid "Innovative Europe"
+msgstr "Europa inovatoare"
+
+#: .\templates\pages\home.html:113
+msgid "National Contact Points (NCPs) for Horizon Europe"
+msgstr "Puncte naționale de contact (NCP) pentru Horizon Europe"
+
+#: .\templates\pages\home.html:115
+msgid "What we do:"
+msgstr "Ce facem:"
+
+#: .\templates\pages\home.html:118
+msgid "Inform & raise awareness"
+msgstr "Informare și creșterea conștientizării"
+
+#: .\templates\pages\home.html:118
+msgid ""
+"on general and specific conditions in Horizon Europe, including funding "
+"opportunities"
+msgstr "privind condițiile generale și specifice din Orizont Europa, inclusiv finanțarea oportunităților"
+
+#: .\templates\pages\home.html:119
+#, fuzzy
+#| msgid "Position in organisation"
+msgid "Assist, advise and train organizations"
+msgstr "Asistă, consiliază și instruiește organizațiile"
+
+#: .\templates\pages\home.html:119
+msgid ""
+"with a view to increasing and improving their participation in Horizon Europe"
+msgstr "în vederea creșterii și îmbunătățirii participării acestora la Orizont Europa"
+
+#: .\templates\pages\home.html:148
+msgid "Widening participation and Strengthening the ERA"
+msgstr "Extinderea participării și consolidarea ERA"
+
+#: .\templates\pages\home.html:159
+msgid "EU Missions"
+msgstr "Misiuni EU"
+
+#: .\templates\pages\home.html:162
+msgid "EU Partnership"
+msgstr "Parteneriate EU"
+
+#: .\templates\pages\home.html:180
+msgid "Latest News"
+msgstr "Știri recente"
+
+#: .\templates\pages\home.html:182
+msgid "The complete news list can be accessed"
+msgstr "Lista completă de știri poate fi accesată"
+
+#: .\templates\pages\home.html:182
+msgid "here"
+msgstr "aici"
+
 #: .\templates\pages\news.html:10
 msgid "News List"
-msgstr "Listă anunțuri"
+msgstr "Listă știri"
 
 #, fuzzy
 #~| msgid "First name"

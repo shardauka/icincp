@@ -13,13 +13,13 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="banner-content get-left animate">
-                    <h1 class="animate">NCP ICI BUCHAREST</h1>
+                    <h1 class="animate">{% translate 'NCP@ICI BUCHAREST' %} </h1>
                     <div class="animate">
-                        <p class="mx-width-75p pt-20 animate">The mission of the NCP Unit is to provide information and assistance to research-innovation communities in Romania in order to participate in the Horizon Europe program.</p>
+                        <p class="mx-width-75p pt-20 animate">{% translate 'The mission of the NCP Unit is to provide information and assistance to research-innovation communities in Romania in order to participate in the Horizon Europe program.' %}</p>
                         <!-- <a href = "{% url 'filestorage' 'blue-fog'%}">Slug link</a>
                         <img src="{% url 'filestorage' 'blue-fog'%}"> -->
                         <div class="banner-button d-flex align-items-center mt-25 animate">
-                            <button class="btn btn-lg btn-purple btn-radious mr-15">Partner Search</button>
+                            <!-- <button class="btn btn-lg btn-purple btn-radious mr-15">Partner Search</button> -->
                             <!-- <a href="#" id="exampleImage" class="height-50 width-50 btn-round btn-sky d-center" data-videourl="https://www.youtube.com/embed/ENr27Q1hKsw"><i class="icofont-ui-play text-25"></i></a> -->
                         </div>
                     </div>
@@ -51,8 +51,8 @@
             <div class="col-md-12">
                 <div class="section-title pb-70 text-center pb-md-50 get-bottom animate"> 
                         <h2>WP 2023-2024</h2>
-                        <h4>Work programmes (WP) Horizon Europe 2023 - 2024</h4>
-                        <h5><a href="#">Read more</a></h5>
+                        <h4>{% translate 'Work programmes (WP) Horizon Europe 2023 - 2024' %} </h4>
+                        <h5><a href="#">{% translate 'Read more' %}</a></h5>
                 </div>
             </div>
         </div>
@@ -63,9 +63,9 @@
                         <div class="card-title pb-20 pb-md-15 animate">
                             <h3>Excellent science</h3>
                         </div>
-                        <p class="animate"><a href="#">ERC - European Research Council</a><br>
+                        <p class="animate"><a href="#">{% translate 'ERC - European Research Council' %}</a><br>
 
-                            <a href="#">MSCA - Marie Sklodowska-Curie Actions</a></p>
+                            <a href="#">{% translate 'MSCA - Marie Sklodowska-Curie Actions' %}</a></p>
                     </div>
                 </div>
             </div>
@@ -73,12 +73,12 @@
                 <div class="feature-card bg-white white-shadow p-40 p-sm-25 radious-10 mb-md-50 mb-sm-50">
                         <div class="feature-card-content text-center animate get-bottom">
                             <div class="card-title pb-20 pb-md-15 animate">
-                                <h3>Global Challenges</h3>
+                                <h3>{% translate 'Global Challenges' %}</h3>
                             </div>
                             <p class="animate">
-                                    <p class="animate"><a href="#">EIC - European Innovation Council</a><br>
-                                        <a href="#">EIE - European Innovation Ecosystems</a><br>
-                                        <a href="#">EIT - European Institute for Innovation and Technology</a>
+                                    <p class="animate"><a href="#">{% translate 'EIC - European Innovation Council' %}</a><br>
+                                        <a href="#">{% translate 'EIE - European Innovation Ecosystems' %}</a><br>
+                                        <a href="#">{% translate 'EIT - European Institute for Innovation and Technology' %}</a>
                                     </p>
                             </p>
                         </div>
@@ -88,12 +88,12 @@
                 <div class="feature-card bg-white white-shadow p-40 p-sm-25 radious-10 mb-md-0">
                     <div class="feature-card-content text-center animate get-bottom">
                         <div class="card-title pb-20 pb-md-15 animate">
-                            <h3>Innovative Europe</h3>
+                            <h3>{% translate 'Innovative Europe' %}</h3>
                         </div>
                         <p class="animate">
-                            <p class="animate"><a href="#">ERC - European Research Council</a><br>
+                            <p class="animate"><a href="#">{% translate 'ERC - European Research Council' %}</a><br>
 
-                                <a href="#">MSCA - Marie Sklodowska-Curie Actions</a></p>
+                                <a href="#">{% translate 'MSCA - Marie Sklodowska-Curie Actions' %}</a></p>
                         </p>
                     </div>
                 </div>
@@ -110,17 +110,17 @@
             <div class="col-lg-6">
                 <div class="seo-service-content get-bottom animate">
                     <div class="section-title pb-20 animate"> 
-                        <h2>National Contact Points (NCPs) for Horizon Europe</h2>
+                        <h2>{% translate 'National Contact Points (NCPs) for Horizon Europe' %}</h2>
                     </div>
-                    <h4 class="pb-20">What we do:</h4>
+                    <h4 class="pb-20">{% translate 'What we do:' %}</h4>
                     <!-- <p class="pb-50 pb-md-30 mx-width-90p mx-md-width-100p animate"> -->
                         <ul class="pb-50 pb-md-30 mx-width-90p mx-md-width-100p " style="list-style: unset; margin-left: 2em;">
-                            <li><b>Inform & raise awareness</b> on general and specific conditions in Horizon Europe, including funding opportunities</li>
-                            <li><b>Assist, advise and train organizations</b> with a view to increasing and improving their participation in Horizon Europe</li>
+                            <li><b>{% translate 'Inform & raise awareness' %}</b> {% translate 'on general and specific conditions in Horizon Europe, including funding opportunities' %} </li>
+                            <li><b>{% translate 'Assist, advise and train organizations' %} </b> {% translate 'with a view to increasing and improving their participation in Horizon Europe' %}</li>
                         </ul>
                     <!-- </p> -->
                     <div class="animate">
-                        <button class="btn btn-purple btn-sm text-capital btn-radious">Read more</button>
+                        <button class="btn btn-purple btn-sm text-capital btn-radious">{% translate 'Read more' %}</button>
                     </div>
                 </div>
             </div> 
@@ -145,7 +145,7 @@
                 <div class="prefer-content">
                     <div class="prefer-heading pb-50 pb-md-30 get-bottom animate">
                         <div class="section-title pb-15 animate"> 
-                            <h2>Widening participation and Strengthening the ERA</h2>
+                            <h2>{% translate 'Widening participation and Strengthening the ERA' %}</h2>
                         </div>
                         <!-- <p class="animate">Degree ducks. Be no phase a who to suggests to her his and to that the copy a city time when their cognitive set pass may is and the be provide a some it hired contribution tyrannize.
                         </p> -->
@@ -153,13 +153,13 @@
                     <div class="prefer-list ">
                         <ul class="get-bottom animate">
                             <li class="pb-20 regular-text before-round before-purple pl-35 animate">
-                                Other HEu Clusters <a href="#">(Read more)</a>
+                                {% translate 'Other HEu Clusters' %} <a href="#"> ({% translate 'Read more' %})</a>
                             </li>
                             <li class="pb-20 regular-text before-round before-purple pl-35 animate">
-                                EU Missions <a href="#">(Read more)</a>
+                                {% translate 'EU Missions' %} <a href="#">({% translate 'Read more' %})</a>
                             </li>
                             <li class="regular-text before-round before-purple pl-35 animate">
-                                EU Partnership <a href="#">(Read more)</a>
+                                {% translate 'EU Partnership' %} <a href="#">({% translate 'Read more' %})</a>
                             </li>
                         </ul>
                     </div>
@@ -177,9 +177,9 @@
             <div class="col-md-12">
                 <div class="blog-heading pb-80 pb-md-50 pb-sm-25 animate get-bottom">
                     <div class="section-title animate">
-                        <h2 class="pb-20">Latest News</h2>
+                        <h2 class="pb-20">{% translate 'Latest News' %}</h2>
                     </div>
-                    <p class="animate">The complete news list can be accessed <a href="{% url 'news' %}" title="Announcements">here</a></p>
+                    <p class="animate">{% translate 'The complete news list can be accessed' %} <a href="{% url 'news' %}" title="Announcements">{% translate 'here' %}</a></p>
                 </div>
             </div>
         </div>

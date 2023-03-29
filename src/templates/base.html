@@ -40,37 +40,34 @@
                         <nav class="main-navbar">
                             <ul>
                                 <li>
-                                    <a href="/">Home</a>
+                                    <a href="/">{% translate 'Home' %} </a>
                                 </li>
                                 <li>
-                                    <a href="/assistance-support-heu">HEu Proposal</a>
+                                    <a href="/assistance-support-heu">{% translate 'HEu Proposal' %}</a>
                                     <ul class="dropdawn">
-                                        <li><a href="/blogpage">Admissibility</a></li>
-                                        <li><a href="/blogpage">Types of Participants</a></li>
-                                        <li><a href="/blogpage">Eligibility</a></li>
+                                        <li><a href="/blogpage">{% translate 'Admissibility' %}</a></li>
+                                        <li><a href="/blogpage">{% translate 'Types of Participants' %}</a></li>
+                                        <li><a href="/blogpage">{% translate 'Eligibility' %}</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="/partnersearch">Partner Search</a>
+                                    <a href="/partnersearch">{% translate 'Partner Search' %}</a>
                                 </li>
                                 <li>
-                                    <a href="/blogpage">Resources</a>
+                                    <a href="/blogpage">{% translate 'Resources' %}</a>
                                     <ul class="dropdawn">
-                                        <li><a href="/blogpage">General Resources</a></li>
-                                        <li><a href="/blogpage">ERC</a></li>
-                                        <li><a href="/blogpage">MSCA</a></li>
-                                        <li><a href="/blogpage">CL4</a></li>
-                                        <li><a href="/blogpage">Widening&Era</a></li>
+                                        <li><a href="/blogpage">{% translate 'General Resources' %}</a></li>
+                                        <li><a href="/blogpage">{% translate 'CL4' %}</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="{% url 'news' %}">News</a>
+                                    <a href="{% url 'news' %}">{% translate 'News' %}</a>
                                 </li>
                                 <li>
-                                    <a href="/contact">Contact</a>
+                                    <a href="/contact">{% translate 'Contact' %}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">Language</a>
+                                    <a href="javascript:void(0);">{% translate 'Language' %}</a>
                                     <ul class="dropdawn">
                                         <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
                                             <input name="next" type="hidden" value="{{ redirect_to }}">
@@ -111,11 +108,11 @@
                 <div class="col-md-12">
                     <div class="footer-heading d-flex justify-content-between align-items-center pb-50">
                         <div class="section-title animate get-left">
-                            <h2 class="text-white">Get our help</h2>
+                            <h2 class="text-white">{% translate 'Get our help' %}</h2>
                         </div>
                         <div class="animate get-right">
                             <a href="/contact">
-                                <button class="btn btn-sm btn-radious bg-white  btn-shatter-orange btn-animate">Contact Us</button>
+                                <button class="btn btn-sm btn-radious bg-white  btn-shatter-orange btn-animate">{% translate 'Contact Us' %}</button>
                             </a>
                         </div>
                     </div>
@@ -125,51 +122,51 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="company-menu comon-footer mb-md-50">
                                 <div class="card-title pb-50 pb-md-25 animate get-bottom">
-                                    <h3 class="text-white">Links</h3>
+                                    <h3 class="text-white">{% translate 'Links' %}</h3>
                                 </div>
                                 <ul class="animate get-bottom">
-                                    <li class="animate"><a href="#">Home</a></li>
-                                    <li class="animate"><a href="#">HEu Proposal</a></li>
-                                    <li class="animate"><a href="#">Partner Search</a></li>
-                                    <li class="animate"><a href="#">Resources</a></li>
-                                    <li class="animate"><a href="#">News</a></li>
+                                    <li class="animate"><a href="#">{% translate 'Home' %}</a></li>
+                                    <li class="animate"><a href="#">{% translate 'HEu Proposal' %}</a></li>
+                                    <li class="animate"><a href="#">{% translate 'Partner Search' %}</a></li>
+                                    <li class="animate"><a href="#">{% translate 'Resources' %}</a></li>
+                                    <li class="animate"><a href="#">{% translate 'News' %}</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
                             <div class="company-menu comon-footer mb-xs-50">
                                 <div class="card-title pb-50 pb-md-25 animate get-bottom">
-                                    <h3 class="text-white text-capital">Info</h3>
+                                    <h3 class="text-white text-capital">{% translate 'Info' %}</h3>
                                 </div>
                                 <ul class="animate get-bottom">
-                                    <li class="animate"><a href="#">Other HEu Clusters</a></li>
-                                    <li class="animate"><a href="#">Ministry of Research, Innovation and Digitalization</a></li>
-                                    <li class="animate"><a href="#">European Union</a></li>
-                                    <li class="animate"><a href="#">CL4</a></li>
+                                    <li class="animate"><a href="#">{% translate 'Other HEu Clusters' %}</a></li>
+                                    <li class="animate"><a href="#">{% translate 'Ministry of Research, Innovation and Digitalization' %}</a></li>
+                                    <li class="animate"><a href="#">{% translate 'European Union' %}</a></li>
+                                    <li class="animate"><a href="#">{% translate 'CL4' %}</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
                             <div class="company-menu comon-footer mb-md-50">
                                 <div class="card-title pb-50 pb-md-25 animate get-bottom">
-                                    <h3 class="text-white text-capital">Data Policy</h3>
+                                    <h3 class="text-white text-capital">{% translate 'Data Policy' %}</h3>
                                 </div>
                                 <ul class="animate get-bottom">
-                                    <li class="animate"><a href="#">GDPR Policy</a></li>
-                                    <li class="animate"><a href="#">Processing personal data</a></li>
-                                    <li class="animate"><a href="#">Cookie Policy</a></li>
+                                    <li class="animate"><a href="#">{% translate 'GDPR Policy' %}</a></li>
+                                    <li class="animate"><a href="#">{% translate 'Processing personal data' %}</a></li>
+                                    <li class="animate"><a href="#">{% translate 'Cookie Policy' %}</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6">
                             <div class="company-menu">
                                 <div class="card-title pb-50 pb-md-25 animate get-bottom">
-                                    <h3 class="text-white text-capital">get in touch</h3>
+                                    <h3 class="text-white text-capital">{% translate 'get in touch' %}</h3>
                                 </div>
                                 <ul class="animate get-bottom">
-                                    <li class="pb-20 text-regular text-gray animate"><b>Address:</b> 8-10, Maresal Averescu Avenue, sector 1, 011455, Bucharest, Romania
-                                        <br> <b>Phone:</b> <a class="text-regular text-white text-sbold" href="#">+40 21 316 52 62</a>
-                                        <br> <b>E-Mail:</b><a class="text-regular text-white text-sbold" href="#"> office@ici.ro</a>
+                                    <li class="pb-20 text-regular text-gray animate"><b>{% translate 'Address:' %}</b> {% translate '8-10, Maresal Averescu Avenue, sector 1, 011455, Bucharest, Romania' %}
+                                        <br> <b>{% translate 'Phone:' %}</b> <a class="text-regular text-white text-sbold" href="#"> +40 21 316 52 62</a>
+                                        <br> <b>{% translate 'E-Mail:' %}</b><a class="text-regular text-white text-sbold" href="#"> office@ici.ro</a>
                                     </li>
                                     <li>
                                         <ul class="d-flex flex-wrap align-items-center animate get-right">
@@ -189,7 +186,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copy-right text-center py-50 animate get-top">
-                        <p class="text-gray">© 2021-2023 NCP@ICI. All rights reserved.</p>
+                        <p class="text-gray">© 2021-2023 NCP@ICI. {% translate 'All rights reserved.' %}</p>
                     </div>
                 </div>
             </div>
