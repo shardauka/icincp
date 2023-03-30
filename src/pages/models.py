@@ -98,3 +98,36 @@ class FileStorage(models.Model):
 
     def get_absolute_url(self):
         return reverse('filestorage', kwargs={'slug': self.slug})
+    
+
+class Events(models.Model):
+    title = models.CharField(max_length = 64, help_text=_('News title'))
+    slug = models.SlugField(unique=True, help_text=_('URL address of the event detail page'))
+    short_description = models.CharField(max_length = 256, blank=True, null=True, help_text=_('Short description'))
+    content = models.CharField(max_length = 2048, blank=True, null=True, help_text=_('Content'))
+    date_published = models.DateTimeField(default=datetime.datetime.now, help_text=_('Published date'))
+    date_start = models.DateTimeField(default=datetime.datetime.now, help_text=_('Start date'))
+    date_end = models.DateTimeField(default=datetime.datetime.now, help_text=_('End date'))
+    
+    class Meta():
+        verbose_name = _('Event')
+        verbose_name_plural = _('Events')
+
+    def __str__(self) -> str:
+        return self.title + '-' + self.short_description
+
+    def is_expired(self):
+        return self.date_end.replace(tzinfo=None) <= datetime.datetime.now()
+    
+    def get_participants(self):
+        return EnrollEvent.objects.filter(event = self)
+
+
+
+class EnrollEvent(models.Model):
+    event = models.ForeignKey(Events, on_delete=models.CASCADE)
+    first_name = models.CharField(max_length = 32, help_text=_('First name'))
+    last_name = models.CharField(max_length = 32, help_text=_('Last name'))
+    email = models.EmailField()
+    telephone = models.CharField(max_length = 13, help_text=_('Telephone'))
+
