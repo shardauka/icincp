@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -205,7 +204,6 @@ msgstr ""
 "caractere)."
 
 #: .\pages\forms.py:40
-#, fuzzy
 #| msgid "Related projects"
 msgid "Please enter related projects"
 msgstr "Proiecte asociate"
@@ -304,7 +302,6 @@ msgid "General pages"
 msgstr "Pagini generale"
 
 #: .\pages\models.py:92
-#, fuzzy
 #| msgid "First name"
 msgid "File name"
 msgstr "Numele fișierului"
@@ -314,13 +311,11 @@ msgid "URL address of the file"
 msgstr "Adresa URL a fișierului"
 
 #: .\pages\models.py:96
-#, fuzzy
 #| msgid "First name"
 msgid "File storage"
 msgstr "Fișier stocat"
 
 #: .\pages\models.py:97
-#, fuzzy
 #| msgid "First name"
 msgid "Files storage"
 msgstr "Fișiere stocate"
@@ -362,7 +357,6 @@ msgid "CL4"
 msgstr "Cl4"
 
 #: .\templates\base.html:67
-#, fuzzy
 #| msgid "Content"
 msgid "Contact"
 msgstr "Contact"
@@ -512,7 +506,6 @@ msgstr ""
 "finanțarea oportunităților"
 
 #: .\templates\pages\home.html:119
-#, fuzzy
 #| msgid "Position in organisation"
 msgid "Assist, advise and train organizations"
 msgstr "Asistă, consiliază și instruiește organizațiile"
@@ -605,7 +598,6 @@ msgid "Tenders you can find a section entitled"
 msgstr "Licitații puteți găsi o secțiune intitulată"
 
 #: .\templates\pages\partner_search.html:33
-#, fuzzy
 #| msgid "Partner Search"
 msgid "Partner search"
 msgstr "Căutare partener"
@@ -644,7 +636,6 @@ msgstr "cu peste 50 000 de persoane și peste 3 000 de organizații."
 
 #: .\templates\pages\partner_search.html:37
 #: .\templates\pages\partner_search.html:39
-#, fuzzy
 #| msgid "Contact Us"
 msgid "Contact the NCPs"
 msgstr "Contactați-ne"
@@ -696,11 +687,3 @@ msgstr "Sunt de acord ca acest EOI să fie făcut public.*"
 #: .\templates\pages\partner_search.html:161
 msgid "Submit EOI"
 msgstr "Trimite EOI"
-
-#, fuzzy
-#~| msgid "First name"
-#~ msgid "File stogage"
-#~ msgstr "Numele fișierului"
-
-#~ msgid "Welcome"
-#~ msgstr "Bine ați venit"
