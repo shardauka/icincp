@@ -54,6 +54,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
+    'icincp.middlewares.forcedefaultlang.SimpleMiddleware'
+    
 ]
 
 ROOT_URLCONF = 'icincp.urls'

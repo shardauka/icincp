@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-30 10:23+0300\n"
+"POT-Creation-Date: 2023-04-06 11:09+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
 "2:1));\n"
 
-#: .\pages\forms.py:6 .\pages\models.py:38
+#: .\pages\forms.py:6 .\pages\models.py:38 .\pages\models.py:129
 msgid "First name"
 msgstr "Nume"
 
@@ -26,7 +26,7 @@ msgstr "Nume"
 msgid "Please enter your first name"
 msgstr "Vă rugăm introduceți numele"
 
-#: .\pages\forms.py:8 .\pages\models.py:39
+#: .\pages\forms.py:8 .\pages\models.py:39 .\pages\models.py:130
 msgid "Last name"
 msgstr "Prenume"
 
@@ -204,7 +204,6 @@ msgstr ""
 "caractere)."
 
 #: .\pages\forms.py:40
-#| msgid "Related projects"
 msgid "Please enter related projects"
 msgstr "Proiecte asociate"
 
@@ -244,7 +243,7 @@ msgstr ""
 "exemplu, colaborare cu civili organizații ale societății, activități care au "
 "implicat cetățeni etc.) (max. 1000 caractere)."
 
-#: .\pages\models.py:11 .\pages\models.py:78
+#: .\pages\models.py:11 .\pages\models.py:78 .\pages\models.py:104
 msgid "News title"
 msgstr "Titlu știre"
 
@@ -252,15 +251,15 @@ msgstr "Titlu știre"
 msgid "URL address of the news detail page"
 msgstr "Adresa URL a paginii de detaliere a unei știri"
 
-#: .\pages\models.py:13
+#: .\pages\models.py:13 .\pages\models.py:106
 msgid "Short description"
 msgstr "Scurtă descriere"
 
-#: .\pages\models.py:14 .\pages\models.py:80
+#: .\pages\models.py:14 .\pages\models.py:80 .\pages\models.py:107
 msgid "Content"
 msgstr "Conținut"
 
-#: .\pages\models.py:15
+#: .\pages\models.py:15 .\pages\models.py:108
 msgid "Published date"
 msgstr "Data publicării"
 
@@ -302,7 +301,6 @@ msgid "General pages"
 msgstr "Pagini generale"
 
 #: .\pages\models.py:92
-#| msgid "First name"
 msgid "File name"
 msgstr "Numele fișierului"
 
@@ -311,14 +309,38 @@ msgid "URL address of the file"
 msgstr "Adresa URL a fișierului"
 
 #: .\pages\models.py:96
-#| msgid "First name"
 msgid "File storage"
 msgstr "Fișier stocat"
 
 #: .\pages\models.py:97
-#| msgid "First name"
 msgid "Files storage"
 msgstr "Fișiere stocate"
+
+#: .\pages\models.py:105
+#| msgid "URL address of the news detail page"
+msgid "URL address of the event detail page"
+msgstr "Adresa URL a paginii de detaliere a unui eveniment"
+
+#: .\pages\models.py:109
+#| msgid "URL address of the news detail page"
+msgid "Start date"
+msgstr ""
+
+#: .\pages\models.py:110
+msgid "End date"
+msgstr "Dată sfârșit"
+
+#: .\pages\models.py:113
+msgid "Event"
+msgstr "Eveniment"
+
+#: .\pages\models.py:114
+msgid "Events"
+msgstr "Evenimente"
+
+#: .\pages\models.py:132
+msgid "Telephone"
+msgstr "Telefon"
 
 #: .\templates\base.html:43 .\templates\base.html:128
 msgid "Home"
@@ -357,7 +379,6 @@ msgid "CL4"
 msgstr "Cl4"
 
 #: .\templates\base.html:67
-#| msgid "Content"
 msgid "Contact"
 msgstr "Contact"
 
@@ -417,7 +438,7 @@ msgstr "Intrați în legătură"
 msgid "Address:"
 msgstr "Adresă"
 
-#: .\templates\base.html:167
+#: .\templates\base.html:167 .\templates\pages\contact.html:91
 msgid "8-10, Maresal Averescu Avenue, sector 1, 011455, Bucharest, Romania"
 msgstr "Bd-ul Mareșal Averescu 8-10, 011455 sector 1, București, România"
 
@@ -432,6 +453,20 @@ msgstr "E-Mail"
 #: .\templates\base.html:189
 msgid "All rights reserved."
 msgstr "Toate drepturile rezervate"
+
+#: .\templates\pages\contact.html:69
+msgid "Contact us for any help"
+msgstr ""
+
+#: .\templates\pages\contact.html:77
+#| msgid "Phone:"
+msgid "Phone"
+msgstr "Telefon"
+
+#: .\templates\pages\contact.html:91
+#| msgid "Address:"
+msgid "Address"
+msgstr "Adresă"
 
 #: .\templates\pages\home.html:16
 msgid "NCP@ICI BUCHAREST"
@@ -506,7 +541,6 @@ msgstr ""
 "finanțarea oportunităților"
 
 #: .\templates\pages\home.html:119
-#| msgid "Position in organisation"
 msgid "Assist, advise and train organizations"
 msgstr "Asistă, consiliază și instruiește organizațiile"
 
@@ -551,10 +585,11 @@ msgstr "Căutare de parteneri - Asistență pentru propunerile HEu"
 #: .\templates\pages\partner_search.html:29
 msgid ""
 "There are several ways to find partners for a proposal in Horizon Europe."
-msgstr "Există mai multe modalități de a găsi parteneri pentru o propunere în Horizon Europe."
+msgstr ""
+"Există mai multe modalități de a găsi parteneri pentru o propunere în "
+"Horizon Europe."
 
 #: .\templates\pages\partner_search.html:31
-#| msgid "Please enter your organization name"
 msgid "Publish a complete profile of your organisation on the"
 msgstr "Publicați un profil complet al organizației dvs. pe"
 
@@ -570,7 +605,10 @@ msgstr "Portal licitații"
 msgid ""
 "This will allow your organisation to be found by anyone interested to form a "
 "consortium and build a proposal in Horizon Europe."
-msgstr "Acest lucru va permite organizației dumneavoastră să fie găsită de oricine este interesat să formeze un consorțiu și să construiască o propunere în Orizont Europa."
+msgstr ""
+"Acest lucru va permite organizației dumneavoastră să fie găsită de oricine "
+"este interesat să formeze un consorțiu și să construiască o propunere în "
+"Orizont Europa."
 
 #: .\templates\pages\partner_search.html:32
 msgid "Search the"
@@ -584,21 +622,25 @@ msgstr "EEN - Enterprise Europe Network"
 msgid ""
 "for potential partners. You can filter the the EEN database by searching for "
 "partners “To collaborate with/co-develop with (research and development)”."
-msgstr "pentru potențiali parteneri. Puteți filtra baza de date EEN căutând parteneri “Pentru a colabora/co-dezvolta cu (cercetare și dezvoltare)” "
+msgstr ""
+"pentru potențiali parteneri. Puteți filtra baza de date EEN căutând "
+"parteneri “Pentru a colabora/co-dezvolta cu (cercetare și dezvoltare)” "
 
 #: .\templates\pages\partner_search.html:33
 msgid ""
 "Search potential partners from among the organisations that express their "
 "interest to participate in a certain topic in Horizon Europe. On the topic "
 "page in Funding"
-msgstr "Căutați potențiali parteneri din rândul organizațiilor care își exprimă interesul de a participa la un anumit subiect în Horizon Europe. Pe pagina subiectului din Finanțare"
+msgstr ""
+"Căutați potențiali parteneri din rândul organizațiilor care își exprimă "
+"interesul de a participa la un anumit subiect în Horizon Europe. Pe pagina "
+"subiectului din Finanțare"
 
 #: .\templates\pages\partner_search.html:33
 msgid "Tenders you can find a section entitled"
 msgstr "Licitații puteți găsi o secțiune intitulată"
 
 #: .\templates\pages\partner_search.html:33
-#| msgid "Partner Search"
 msgid "Partner search"
 msgstr "Căutare partener"
 
@@ -614,7 +656,9 @@ msgstr "pentru a aplica pentru subiectul respectiv."
 msgid ""
 "For proposals in MSCA - Marie Sklodowska-Curie, you can publish the profile "
 "of your organisation on the dedicated European platform,"
-msgstr "Pentru propuneri în MSCA - Marie Sklodowska-Curie, puteți publica profilul organizației dumneavoastră pe platforma europeană dedicată,"
+msgstr ""
+"Pentru propuneri în MSCA - Marie Sklodowska-Curie, puteți publica profilul "
+"organizației dumneavoastră pe platforma europeană dedicată,"
 
 #: .\templates\pages\partner_search.html:34
 msgid "and find and be found."
@@ -624,7 +668,9 @@ msgstr "și găsiți și fiți găsit."
 msgid ""
 "Participate in Brokerage and matchmaking events organised by the European "
 "Commission or nationally."
-msgstr "Participați la evenimente de intermediere și matchmaking organizate de Comisia Europeană sau la nivel național."
+msgstr ""
+"Participați la evenimente de intermediere și matchmaking organizate de "
+"Comisia Europeană sau la nivel național."
 
 #: .\templates\pages\partner_search.html:36
 msgid "Search the UEFISCDI platform"
@@ -636,7 +682,6 @@ msgstr "cu peste 50 000 de persoane și peste 3 000 de organizații."
 
 #: .\templates\pages\partner_search.html:37
 #: .\templates\pages\partner_search.html:39
-#| msgid "Contact Us"
 msgid "Contact the NCPs"
 msgstr "Contactați-ne"
 
@@ -645,24 +690,33 @@ msgid ""
 "Based on an Expression of Interest you fill in and send to the NCP, they can "
 "disseminate your inquiry to European NCP networks in their area or to "
 "specific NCPs in certain countries."
-msgstr "Pe baza unei Manifestări de interes pe care o completați și pe care o trimiteți către NCP, acesta vă poate disemina solicitarea către rețelele NCP europene din zona lor sau către anumite NCP din anumite țări."
+msgstr ""
+"Pe baza unei Manifestări de interes pe care o completați și pe care o "
+"trimiteți către NCP, acesta vă poate disemina solicitarea către rețelele NCP "
+"europene din zona lor sau către anumite NCP din anumite țări."
 
 #: .\templates\pages\partner_search.html:39
 msgid ""
 "An as complete as possible profile of your organisation will help us help "
 "you in finding partners for proposals in Horizon Europe."
-msgstr "Un profil cât mai complet posibil al organizației dumneavoastră ne va ajuta să vă ajutăm în găsirea de parteneri pentru propuneri în Orizont Europa."
+msgstr ""
+"Un profil cât mai complet posibil al organizației dumneavoastră ne va ajuta "
+"să vă ajutăm în găsirea de parteneri pentru propuneri în Orizont Europa."
 
 #: .\templates\pages\partner_search.html:39
 msgid ""
 "By filling out the form below (EOI - Expression of Interest), we can do the "
 "following:"
-msgstr "Prin completarea formularului de mai jos (EOI - Exprimarea interesului), putem face următoarele:"
+msgstr ""
+"Prin completarea formularului de mai jos (EOI - Exprimarea interesului), "
+"putem face următoarele:"
 
 #: .\templates\pages\partner_search.html:41
 msgid ""
 "search for potential partner organisations in our databases as well Funding"
-msgstr "căutați potențiale organizații partenere în bazele noastre de date, precum și în finanțare"
+msgstr ""
+"căutați potențiale organizații partenere în bazele noastre de date, precum "
+"și în finanțare"
 
 #: .\templates\pages\partner_search.html:41
 msgid "Tenders and EEN"
@@ -672,18 +726,22 @@ msgstr "Licitații și EEN"
 msgid ""
 "disseminate your EOI to EU NCP networks or individual NCPs from other "
 "countries (for Romanian organisations)"
-msgstr "diseminați-vă EOI către rețelele PCN ale UE sau către PCN-urile individuale din alte țări (pentru organizațiile românești)"
+msgstr ""
+"diseminați-vă EOI către rețelele PCN ale UE sau către PCN-urile individuale "
+"din alte țări (pentru organizațiile românești)"
 
 #: .\templates\pages\partner_search.html:43
 msgid ""
 "provide you with a list of organisations that you can then contact and "
 "discuss with them"
-msgstr "vă oferă o listă de organizații pe care apoi le puteți contacta și discuta cu acestea"
+msgstr ""
+"vă oferă o listă de organizații pe care apoi le puteți contacta și discuta "
+"cu acestea"
 
-#: .\templates\pages\partner_search.html:156
+#: .\templates\pages\partner_search.html:160
 msgid "I agree that this EOI is made public.*"
 msgstr "Sunt de acord ca acest EOI să fie făcut public.*"
 
-#: .\templates\pages\partner_search.html:161
+#: .\templates\pages\partner_search.html:165
 msgid "Submit EOI"
 msgstr "Trimite EOI"
