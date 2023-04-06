@@ -43,7 +43,11 @@
                             <li>{% translate 'provide you with a list of organisations that you can then contact and discuss with them' %}</li></ul></div>
                 </div>
                 <form method="Post"> {% csrf_token %}
-                <div class="contact-information-fild get-bottom animate">
+                <div class="contact-information-fild get-bottom animate" style="border: solid 1px; padding: 30px 25px;">
+                    <div style="margin-bottom: 20px">
+                        <h2>EOI - Expression of Interest</h2>
+                        <h5>(Please fill in the form)</h5>
+                    </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="single-form">

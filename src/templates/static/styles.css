@@ -1998,7 +1998,8 @@ p,
 .form-control {
   border-radius: 0;
   border-color: transparent;
-  padding: 15px 20px;
+  /* padding: 15px 20px; */
+  padding: 15px 0px;
   height: 50px;
   font-size: 15px;
   font-weight: 500;
@@ -16057,7 +16058,8 @@ PLEASE PRESS CTRL+F ON YOUR KEYBOARD THEN YOU SEARCH ANY CLASS OR ANY SECTION IN
     margin-bottom: 30px; }
     .contact-information-fild .single-form input {
       height: 40px;
-      padding: 0px 10px; }
+      /* padding: 0px 10px;  */
+      padding: 10px 0px;}
     .contact-information-fild .single-form textarea {
       width: 100%;
       border: none;
