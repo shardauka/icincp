@@ -6,6 +6,7 @@ from django.urls import reverse
 
 import datetime
 
+from icincp.settings import DEFAULT_TO_EMAIL
 
 class News(models.Model):
     title = models.CharField(max_length = 64, help_text=_('News title'))
@@ -60,11 +61,11 @@ class EOI(models.Model):
         return self.email + ' ' + self.first_name + ' ' + self.last_name
     
 
-    def send_email(self):
+    def send_email(self, to_email = DEFAULT_TO_EMAIL):
         plaintext = get_template('email/eoi_mail.txt')
         htmly     = get_template('email/eoi_mail.html')
         d = { 'eoi': self}
-        subject, from_email, to = 'Expression of interest', 'no-reply@ici.ro', 'mihai.apostol@ici.ro'
+        subject, from_email, to = 'Expression of interest', 'no-reply@ici.ro', to_email
         text_content = plaintext.render(d)
         html_content = htmly.render(d)
         msg = EmailMultiAlternatives(subject, text_content, from_email, [to])

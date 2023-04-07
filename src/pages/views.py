@@ -26,6 +26,8 @@ def partner_search(request):
                 eoi.hepoi.add(i)
             eoi.save()
             eoi.send_email()
+            context = {'form': form, 'succes': True}
+            return render(request, 'pages/partner_search.html', context)
     context = {'form': form}
     return render(request, 'pages/partner_search.html', context)
 
