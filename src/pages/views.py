@@ -26,8 +26,7 @@ def partner_search(request):
                 eoi.hepoi.add(i)
             eoi.save()
             eoi.send_email()
-            context = {'form': form, 'succes': True}
-            return render(request, 'pages/partner_search.html', context)
+            return redirect('form_submit_thank_you')
     context = {'form': form}
     return render(request, 'pages/partner_search.html', context)
 
@@ -66,3 +65,6 @@ def storagefile_view(request, slug):
     response = HttpResponse(file.file, content_type=content_type)
     response['Content-Disposition'] = 'filename='+file.file.name
     return response
+
+def thank_you_view(request):
+    return render(request, 'pages/form_succes.html')
