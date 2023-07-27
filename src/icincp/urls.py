@@ -35,6 +35,7 @@ urlpatterns += i18n_patterns(
     path('tinymce/', include('tinymce.urls')),
     path('admin/', admin.site.urls),
     path('', home_view, name='home'),
+    path('index', home_view, name='index'),
     path('partnersearch', partner_search, name='partnersearch'),
     path('thank_you', thank_you_view, name='form_submit_thank_you'),
     path('contact', contact_view, name='contact'),

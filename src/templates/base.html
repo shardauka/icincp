@@ -40,7 +40,7 @@
                         <nav class="main-navbar">
                             <ul>
                                 <li>
-                                    <a href="/">{% translate 'Home' %} </a>
+                                    <a href="{% url 'home' %}">{% translate 'Home' %} </a>
                                 </li>
                                 <li>
                                     <a href="/assistance-support-heu">{% translate 'HEu Proposal' %}</a>
@@ -125,11 +125,11 @@
                                     <h3 class="text-white">{% translate 'Links' %}</h3>
                                 </div>
                                 <ul class="animate get-bottom">
-                                    <li class="animate"><a href="#">{% translate 'Home' %}</a></li>
-                                    <li class="animate"><a href="#">{% translate 'HEu Proposal' %}</a></li>
-                                    <li class="animate"><a href="#">{% translate 'Partner Search' %}</a></li>
-                                    <li class="animate"><a href="#">{% translate 'Resources' %}</a></li>
-                                    <li class="animate"><a href="#">{% translate 'News' %}</a></li>
+                                    <li class="animate"><a href="{% url 'home' %}">{% translate 'Home' %}</a></li>
+                                    <li class="animate"><a href="/assistance-support-heu">{% translate 'HEu Proposal' %}</a></li>
+                                    <li class="animate"><a href="/partnersearch">{% translate 'Partner Search' %}</a></li>
+                                    <li class="animate"><a href="/resources">{% translate 'Resources' %}</a></li>
+                                    <li class="animate"><a href="/news">{% translate 'News' %}</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -139,10 +139,9 @@
                                     <h3 class="text-white text-capital">{% translate 'Info' %}</h3>
                                 </div>
                                 <ul class="animate get-bottom">
-                                    <li class="animate"><a href="#">{% translate 'Other HEu Clusters' %}</a></li>
-                                    <li class="animate"><a href="#">{% translate 'Ministry of Research, Innovation and Digitalization' %}</a></li>
-                                    <li class="animate"><a href="#">{% translate 'European Union' %}</a></li>
-                                    <li class="animate"><a href="#">{% translate 'CL4' %}</a></li>
+                                    <li class="animate"><a href="https://uefiscdi.gov.ro/">{% translate 'Other HEu Clusters' %}</a></li>
+                                    <li class="animate"><a href="https://www.mcid.gov.ro/">{% translate 'Ministry of Research, Innovation and Digitalization' %}</a></li>
+                                    <li class="animate"><a href="https://european-union.europa.eu">{% translate 'European Union' %}</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -152,9 +151,9 @@
                                     <h3 class="text-white text-capital">{% translate 'Data Policy' %}</h3>
                                 </div>
                                 <ul class="animate get-bottom">
-                                    <li class="animate"><a href="#">{% translate 'GDPR Policy' %}</a></li>
-                                    <li class="animate"><a href="#">{% translate 'Processing personal data' %}</a></li>
-                                    <li class="animate"><a href="#">{% translate 'Cookie Policy' %}</a></li>
+                                    <li class="animate"><a href="/gdpr">{% translate 'GDPR Policy' %}</a></li>
+                                    <li class="animate"><a href="/processing-presonal-data">{% translate 'Processing personal data' %}</a></li>
+                                    <li class="animate"><a href="/cookie-policy">{% translate 'Cookie Policy' %}</a></li>
                                 </ul>
                             </div>
                         </div>
