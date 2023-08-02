@@ -19,6 +19,8 @@ from django.urls import path, include
 from pages.views import home_view, partner_search, contact_view, blog_view, general_page_view, news_detail_view, news_page_view, storagefile_view, thank_you_view
 from django.conf.urls.i18n import i18n_patterns
 
+from icincp import settings
+from django.conf.urls.static import static
 
 admin.site.site_header = 'NCP-ICI Admin Panel'
 
@@ -29,7 +31,7 @@ urlpatterns = [
     #path('', home_view, name="home"),
     #path('i18n/', include('django.conf.urls.i18n')),
     path('storage/<slug:slug>/', storagefile_view, name='filestorage'),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += i18n_patterns(
     path('tinymce/', include('tinymce.urls')),
@@ -44,7 +46,5 @@ urlpatterns += i18n_patterns(
     path('news-detail/<slug:slug>/', news_detail_view, name='news_detail'),
     path('<slug:slug>/', general_page_view, name='contentpage'),
     
-    
 
-    
 )

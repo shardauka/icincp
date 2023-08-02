@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 12:04+0300\n"
+"POT-Creation-Date: 2023-08-02 15:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -345,8 +345,8 @@ msgid "Home"
 msgstr "Acasă"
 
 #: .\templates\base.html:46 .\templates\base.html:129
-msgid "HEu Proposal"
-msgstr "Propuneri HEu"
+msgid "HE Proposal"
+msgstr "Propuneri HE"
 
 #: .\templates\base.html:48
 msgid "Admissibility"
@@ -366,7 +366,7 @@ msgstr "Eligibilitate"
 #: .\templates\pages\partner_search.html:32
 #: .\templates\pages\partner_search.html:36
 msgid "Partner Search"
-msgstr "Căutare partener"
+msgstr "Căutare parteneri"
 
 #: .\templates\base.html:57 .\templates\base.html:131
 msgid "Resources"
@@ -404,8 +404,10 @@ msgstr "Link-uri"
 msgid "Info"
 msgstr "Info"
 
-#: .\templates\base.html:142 .\templates\pages\home.html:156
-msgid "Other HEu Clusters"
+#: .\templates\base.html:142
+#, fuzzy
+#| msgid "Other HEu Clusters"
+msgid "Other HE Clusters"
 msgstr "Alte clustere HEu "
 
 #: .\templates\base.html:143
@@ -560,6 +562,10 @@ msgstr ""
 msgid "Widening participation and Strengthening the ERA"
 msgstr "Extinderea participării și consolidarea ERA"
 
+#: .\templates\pages\home.html:156
+msgid "Other HEu Clusters"
+msgstr "Alte clustere HEu "
+
 #: .\templates\pages\home.html:159
 msgid "EU Missions"
 msgstr "Misiuni EU"
@@ -653,7 +659,7 @@ msgstr "Puteți găsi o secțiune intitulată"
 
 #: .\templates\pages\partner_search.html:34
 msgid "Partner search"
-msgstr "Căutare partener"
+msgstr "Căutare parteneri"
 
 #: .\templates\pages\partner_search.html:34
 msgid "where you can see the profile of those interested"
