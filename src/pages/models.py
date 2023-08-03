@@ -34,6 +34,11 @@ class HEPoi(models.Model):
 
     def __str__(self) -> str:
         return self.name
+    
+    class Meta:
+        verbose_name = _('Programme of interest')
+        verbose_name_plural = _('Programms of interest')
+        
 
 class EOI(models.Model):
     first_name = models.CharField(max_length = 32, help_text=_('First name'))
@@ -54,8 +59,8 @@ class EOI(models.Model):
     other = models.CharField(max_length = 1024, help_text=_('Other information'))
 
     class Meta:
-        verbose_name = _('EOI')
-        verbose_name_plural = _('EOIs')
+        verbose_name = _('Expression of Interest')
+        verbose_name_plural = _('Expressions of Interest')
 
     def __str__(self) -> str:
         return self.email + ' ' + self.first_name + ' ' + self.last_name
@@ -132,3 +137,6 @@ class EnrollEvent(models.Model):
     email = models.EmailField()
     telephone = models.CharField(max_length = 13, help_text=_('Telephone'))
 
+    class Meta():
+        verbose_name = _('Event enroll')
+        verbose_name_plural = _('Events enroll')
