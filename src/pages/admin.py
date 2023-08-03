@@ -1,11 +1,11 @@
 from django.contrib import admin
-from django.db import models
 from .models import News, HEPoi, EOI, GeneralPage, FileStorage, Events, EnrollEvent
 from tinymce.widgets import TinyMCE
 from django import forms
 from django.utils.html import format_html
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
+import os
 
 class NewsAdmin(admin.ModelAdmin):
     list_display  = ['title', 'short_description', 'slug']
@@ -57,7 +57,7 @@ class EventsAdmin(admin.ModelAdmin):
 class FileStorageAdmin(admin.ModelAdmin):
     list_display  = ['name', 'slug', 'file', 'custom_absolute_url']
     prepopulated_fields = {"slug": ("name",)}
-    readonly_fields = ['custom_absolute_url']
+    readonly_fields = ['custom_absolute_url', 'img_preview']
 
     def get_absolute_url(self, obj):
         return reverse('filestorage', kwargs={'slug': obj.slug})
@@ -66,9 +66,24 @@ class FileStorageAdmin(admin.ModelAdmin):
         if obj.pk:
             return format_html('<a href="{url}" target="_blank">{url}</a>'.format(url=obj.get_absolute_url()))
         return _('File does not exist')
-    
     custom_absolute_url.short_description = _('File URL')
-    #get_absolute_url.allow_tags = True
+
+    def img_preview(self, obj):
+        if obj.file:
+            file_extension = os.path.splitext(obj.file.name)[1].lower()
+            image_extensions = ['.jpg', '.jpeg', '.png', '.gif']
+            if file_extension in image_extensions:
+                return format_html(f'<img src="{obj.file.url}" width="300"/>')
+        return _('No image preview available')
+    img_preview.short_description = _('Image preview')
+    
+    # def save_model(self, request, obj, form, change):
+    #     if not obj.slug:  # Only prepopulate if the slug is empty
+    #         slug_value = f"{obj.name}-{obj.id}"  # Use a combination of name and id for the slug
+    #         obj.slug = slug_value.replace(" ", "-")  # Prepopulate the slug (replace spaces with dashes)
+    #     super().save_model(request, obj, form, change)
+
+
 
 admin.site.register(News, NewsAdmin)
 admin.site.register(HEPoi)

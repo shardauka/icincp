@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-03 09:45+0300\n"
+"POT-Creation-Date: 2023-08-03 10:17+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,9 +26,18 @@ msgstr "Fișierul nu există"
 msgid "Page URL"
 msgstr "ULR-ul paginii"
 
-#: .\pages\admin.py:70
+#: .\pages\admin.py:69
 msgid "File URL"
 msgstr "URL-ul fișierului"
+
+#: .\pages\admin.py:77
+#| msgid "Image preview"
+msgid "No image preview available"
+msgstr "Previzualizarea nu este disponibilă"
+
+#: .\pages\admin.py:78
+msgid "Image preview"
+msgstr "Previzualizare imagine"
 
 #: .\pages\apps.py:7 .\pages\models.py:15 .\pages\models.py:86
 #: .\pages\models.py:113
