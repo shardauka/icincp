@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     
     'modeltranslation',
     'tinymce',
+    'captcha',
 
     'pages',
 ]

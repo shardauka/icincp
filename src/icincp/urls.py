@@ -35,7 +35,9 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     path('tinymce/', include('tinymce.urls')),
+    path('captcha/', include('captcha.urls')),
     path('admin/', admin.site.urls),
+    
     path('', home_view, name='home'),
     path('index', home_view, name='index'),
     path('partnersearch', partner_search, name='partnersearch'),

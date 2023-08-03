@@ -21,11 +21,15 @@ def partner_search(request):
             #separating hepoi from form data because manytomany field
             hepoi = cleaned_data['hepoi']
             cleaned_data.pop('hepoi')
+            cleaned_data.pop('captcha')
             eoi = EOI.objects.create(**cleaned_data)
             for i in hepoi:
                 eoi.hepoi.add(i)
             eoi.save()
-            eoi.send_email()
+            try:
+                eoi.send_email()
+            except:
+                pass
             return redirect('form_submit_thank_you')
     context = {'form': form}
     return render(request, 'pages/partner_search.html', context)

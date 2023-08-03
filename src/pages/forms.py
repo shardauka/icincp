@@ -2,6 +2,8 @@ from django import forms
 from django.utils.translation import gettext_lazy as _
 from .models import HEPoi
 
+from captcha.fields import CaptchaField
+
 class EOI_Form(forms.Form):
     first_name = forms.CharField(max_length = 32, help_text=_('First name'), widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': _('First name')}), error_messages={'required': _('Please enter your first name')})
 
@@ -42,4 +44,6 @@ class EOI_Form(forms.Form):
     achievements = forms.CharField(max_length = 2048, help_text=_('Department short description'), widget=forms.Textarea(attrs={'class': 'form-control', 'rows':3, 'placeholder': _('Significant Achievements (if the case): Please provide a list of the most important and relevant achievements in your field of expertise (international / EU / national). For example, significant exhibitions, conferences, actions your organised. The actions listed here should be not older than 5 years (from 2018 and newer). Please indicate title of the event and the year (max. 2000 characters).')}), error_messages={'required': _('Please enter related achievements')})
     
     other = forms.CharField(max_length = 1024, help_text=_('Other information'), widget=forms.Textarea(attrs={'class': 'form-control', 'rows':2, 'placeholder': _('Other: Please list here any other added value you can bring as a potential partner in a Horizon Europe proposal (for example, collaboration with civil society organisations, activities that involved citizens, etc.) (max. 1000 characters).')}), required=False)
+
+    captcha = CaptchaField()
 

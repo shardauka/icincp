@@ -53,56 +53,57 @@
                         <div class="col-md-6">
                             <div class="single-form">
                                 {{ form.first_name }}
-                                {{ form.first_name.errors }}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.first_name.errors }}</div>
                             </div>
                         </div>
                         
                         <div class="col-md-6">
                             <div class="single-form">
                                 {{ form.last_name }}
-                                {{ form.last_name.errors }}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.last_name.errors }}</div>
                             </div>
                         </div>
                         <div class="col-md-8">
                             <div class="single-form">
                                 {{ form.organization_pozition }}
-                                {{ form.organization_pozition.errors }}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.organization_pozition.errors }}</div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="single-form">
                                 {{ form.email }}
                                 <div >{{ form.email.errors }}</div>
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.email.errors }}</div>
                             </div>
                         </div>
                         <div class="col-md-8">
                             <div class="single-form">
                                 {{ form.organization_name }}
-                                {{ form.organization_name.errors }}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.organization_name.errors }}</div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="single-form">
                                 {{ form.organization_acronym }}
-                                {{ form.organization_acronym.errors }}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.organization_acronym.errors }}</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="single-form">
                                 {{ form.research_fields }}
-                                {{ form.research_fields.errors }}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.research_fields.errors }}</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="single-form">
                                 {{ form.key_words }}
-                                {{ form.key_words.errors }}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.key_words.errors }}</div>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="single-form">
                                 {{ form.organization_short_description }}
-                                {{ form.organization_short_description.errors }}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.organization_short_description.errors }}</div>
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -116,42 +117,49 @@
                                 </label>
                                 {% endfor %}
                                 {{form.hepoi.errors}}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.skills_competences.errors }}</div>
                             </div>
 
                         </div>
                         <div class="col-md-12">
                             <div class="single-form">
                                 {{ form.department_short_description }}
-                                {{form.department_short_description.errors}}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{form.department_short_description.errors}}</div>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="single-form">
                                 {{ form.skills_competences }}
-                                {{ form.skills_competences.errors }}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.skills_competences.errors }}</div>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="single-form">
                                 {{ form.scientific_publication }}
-                                {{ form.scientific_publication.errors }}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.scientific_publication.errors }}</div>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="single-form">
                                 {{ form.related_projects }}
-                                {{ form.related_projects.errors }}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.related_projects.errors }}</div>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="single-form">
                                 {{ form.achievements }}
-                                {{ form.achievements.errors }}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.achievements.errors }}</div>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="single-form">
                                 {{ form.other }}
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="single-form">
+                                {{ form.captcha }}
+                                <div style="margin-top: 0.5em; color: red; font-weight: bold;">{{ form.captcha.errors }}</div>
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -166,7 +174,6 @@
                     <button class="btn btn-lg btn-purple btn-radious">{% translate 'Submit EOI' %}</button>
                 </div>
                 </form>
-                {{form.errors}}
             </div>
         </div>
     </div>
