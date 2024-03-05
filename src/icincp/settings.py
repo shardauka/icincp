@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '0.0.0.0', '193.230.11.147']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -177,4 +178,18 @@ TINYMCE_DEFAULT_CONFIG = {
     "alignright alignjustify | bullist numlist outdent indent | "
     "insertfile image link | "
     "removeformat | help",
+}
+
+JAZZMIN_SETTINGS = {
+    "default_ui": "bootstrap5", 
+    "menu_title": "Panou de admin",
+    "site_title": "Platforma Românilor de Pretutindeni",
+    "site_header": "Platforma Românilor de Pretutindeni",
+    "site_logo": "images/brand-logos/logo.png", 
+    "show_ui_builder": False,
+    "related_modal_active": False,
+    "custom_css": "css/admin_custom.css",
+    "welcome_sign": "Platforma Românilor de Pretutindeni",
+    "copyright": "Platforma Românilor de Pretutindeni",
+    "hide_models": [],
 }

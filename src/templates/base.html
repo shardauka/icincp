@@ -51,7 +51,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="/partnersearch">{% translate 'Partner Search' %}</a>
+                                    <a href="{% url 'partnersearch' %}">{% translate 'Partner Search' %}</a>
                                 </li>
                                 <li>
                                     <a href="/resources">{% translate 'Resources' %}</a>
@@ -185,7 +185,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copy-right text-center py-50 animate get-top">
-                        <p class="text-gray">© 2021-2023 NCP@ICI. {% translate 'All rights reserved.' %}</p>
+                        <p class="text-gray">© 2021-<span id="footer_year"></span> NCP@ICI. {% translate 'All rights reserved.' %}</p>
                     </div>
                 </div>
             </div>
@@ -218,6 +218,9 @@ function change_language(element, lang){
     form.appendChild(select)
     form.submit()
 }
+
+document.getElementById("footer_year").innerHTML = new Date().getFullYear();
+
 </script>
 
 

@@ -26,7 +26,7 @@ admin.site.site_header = 'NCP-ICI Admin Panel'
 
 
 urlpatterns = [
-    path(r'^i18n/', include('django.conf.urls.i18n')),
+    path(r'i18n/', include('django.conf.urls.i18n')),
     #path('admin/', admin.site.urls),
     #path('', home_view, name="home"),
     #path('i18n/', include('django.conf.urls.i18n')),
