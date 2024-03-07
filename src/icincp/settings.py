@@ -183,13 +183,13 @@ TINYMCE_DEFAULT_CONFIG = {
 JAZZMIN_SETTINGS = {
     "default_ui": "bootstrap5", 
     "menu_title": "Panou de admin",
-    "site_title": "Platforma Românilor de Pretutindeni",
-    "site_header": "Platforma Românilor de Pretutindeni",
+    "site_title": "NCP@ICI",
+    "site_header": "NCP@ICI",
     "site_logo": "images/brand-logos/logo.png", 
     "show_ui_builder": False,
     "related_modal_active": False,
     "custom_css": "css/admin_custom.css",
-    "welcome_sign": "Platforma Românilor de Pretutindeni",
-    "copyright": "Platforma Românilor de Pretutindeni",
+    "welcome_sign": "NCP@ICI",
+    "copyright": "NCP@ICI",
     "hide_models": [],
 }
