@@ -210,6 +210,7 @@
 function change_language(element, lang){
     form = element.parentElement.parentElement
     select = document.createElement('select')
+    select.style.display = 'none'
     select.name = "language"
     option = document.createElement('option')
     option.value = lang
