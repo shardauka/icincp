@@ -9,23 +9,42 @@ import os
 
 class NewsAdmin(admin.ModelAdmin):
     list_display  = ['title', 'short_description', 'slug']
-    prepopulated_fields = {"slug": ("title",)}
+    prepopulated_fields = {"slug": ("title_en",)}
+    exclude = ['title','content', 'short_description']
+    readonly_fields = ['date_published']
     def formfield_for_dbfield(self, db_field, **kwargs):
-        if db_field.name in ['content', 'content_ro', 'content_en']:
+        if db_field.name in ['content_ro', 'content_en']:
             kwargs['widget'] = TinyMCE(attrs={'cols': 80, 'rows': 20})
+        if db_field.name in ['short_description_ro', 'short_description_en']:
+            kwargs['widget'] = forms.Textarea(attrs={'cols': 80, 'rows': 3})
         return super(NewsAdmin, self).formfield_for_dbfield(db_field,**kwargs)
+    
+    def get_form(self, request, obj=None, **kwargs):
+        form = super().get_form(request, obj, **kwargs)
+        form.base_fields['title_ro'].required = True
+        form.base_fields['title_en'].required = True
+        form.base_fields['short_description_ro'].required = True
+        form.base_fields['short_description_en'].required = True
+        return form
 
 
 class GeneralPageAdmin(admin.ModelAdmin):
     list_display  = ['title', 'custom_absolute_url']
-    prepopulated_fields = {"slug": ("title",)}
-    search_fields = ['title', 'content', 'content_en', 'content_ro']
+    prepopulated_fields = {"slug": ("title_en",)}
+    search_fields = ['content_en', 'content_ro']
+    exclude = ['title', 'content']
     def formfield_for_dbfield(self, db_field, **kwargs): 
-        if db_field.name in ['content', 'content_ro', 'content_en']:
+        if db_field.name in ['content_ro', 'content_en']:
             kwargs['widget'] = TinyMCE(attrs={'cols': 80, 'rows': 20})
-        if db_field.name in ['short_description', 'short_description_ro', 'short_description_en']:
+        if db_field.name in ['short_description_ro', 'short_description_en']:
             kwargs['widget'] = forms.Textarea(attrs={'cols': 80, 'rows': 3})
         return super(GeneralPageAdmin, self).formfield_for_dbfield(db_field,**kwargs)
+
+    def get_form(self, request, obj=None, **kwargs):
+        form = super().get_form(request, obj, **kwargs)
+        form.base_fields['title_ro'].required = True
+        form.base_fields['title_en'].required = True
+        return form
 
     def get_absolute_url(self, obj):
         return reverse('filestorage', kwargs={'slug': obj.slug})
@@ -39,14 +58,23 @@ class GeneralPageAdmin(admin.ModelAdmin):
 
 class EventsAdmin(admin.ModelAdmin):
     list_display  = ['title', 'short_description', 'slug', 'expired']
-    prepopulated_fields = {"slug": ("title",)}
+    prepopulated_fields = {"slug": ("title_en",)}
+    exclude = ['title','content', 'short_description']
     def formfield_for_dbfield(self, db_field, **kwargs):
-        if db_field.name in ['content', 'content_ro', 'content_en']:
+        if db_field.name in ['content_ro', 'content_en']:
             kwargs['widget'] = TinyMCE(attrs={'cols': 80, 'rows': 20})
-        if db_field.name in ['short_description', 'short_description_ro', 'short_description_en']:
+        if db_field.name in ['short_description_ro', 'short_description_en']:
             kwargs['widget'] = forms.Textarea(attrs={'cols': 80, 'rows': 3})
         return super(EventsAdmin, self).formfield_for_dbfield(db_field,**kwargs)
     
+    def get_form(self, request, obj=None, **kwargs):
+        form = super().get_form(request, obj, **kwargs)
+        form.base_fields['title_ro'].required = True
+        form.base_fields['title_en'].required = True
+        form.base_fields['short_description_ro'].required = True
+        form.base_fields['short_description_en'].required = True
+        return form
+
     def expired(self, obj):
         if obj.is_expired():
             return format_html('<div style="color: red; font-weight: bold;">%s</div>' % obj.is_expired())

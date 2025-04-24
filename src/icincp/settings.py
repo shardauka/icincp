@@ -185,7 +185,7 @@ JAZZMIN_SETTINGS = {
     "menu_title": "Panou de admin",
     "site_title": "NCP@ICI",
     "site_header": "NCP@ICI",
-    "site_logo": "images/brand-logos/logo.png", 
+    "site_logo": "images/site-logo.webp", 
     "show_ui_builder": False,
     "related_modal_active": False,
     "custom_css": "css/admin_custom.css",
